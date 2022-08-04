@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../img/logoparahtml.png" type="image/x-icon">
+</head>
+<body>
+    <header id="header" class="header">
+        <a class="header__logo" href="../index.html"><img src="../img/logoparahtml.png" alt=""></a>
+    
+    <nav class="header__nav">
+        <ul class="header__ul flex-row">
+            <li class="header__li">
+                <a class="header__link header__link-active" href="./productos.html">Productos</a></li>
+            <li class="header__li">
+                <a class="header__link" href="./lineasdebano.html">Líneas de baño</a></li>
+            <li class="header__li">
+                <a class="header__link" href="./about.html">¿Quiénes somos?</a></li>
+            <li class="header__li">
+                <a class="header__link" href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<h1 class="home__title">CONTACTO</h1>
+
+
+<!-- formulario de contacto -->
+<section class="contact">
+    <article>
+        <form class="form">
+                       <input class="form__input" type="text" placeholder="Nombre" name="nombre" required>
+            <input class="form__input" type="text" placeholder="Apellido" name="apellido" id="" required>
+          <input class="form__input" type="email" placeholder="ejemplo@email.com" name="email"required>
+                   <input class="form__input" type="number" placeholder="Edad" required min="1" max="99">
+            <p class="form__label">Sexo:</p>
+            <section>
+             <label class="form__label" for="radio">Masculino</label>   
+            <input class="form__choice" type="radio" name="Masculino" id="Masculino">
+            <label class="form__label" for="radio">Femenino</label> 
+            <input class="form__choice" type="radio" name="Femenino" id="">
+            <label class="form__label" for="radio">Otro</label> 
+            <input class="form__choice" type="radio" name="Otro" id="">
+            <label class="form__label" for="radio">Prefiero no decirlo</label> 
+            <input class="form__choice" type="radio" name="Prefiero no decirlo" id="">                
+        </section>
+        <textarea class="form__textarea" id="w3review" name="comentarios" rows="4" cols="50" placeholder="Dejanos tus comentarios."></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        </form>
+    </article>
+</section>
+    
+    
+    
+<footer id="footer" class="footer flex-row ">
+
+    <article class="footer__datos flex-row">
+    <h3 class="datos">OJH SANITARIOS</h3>
+    <h4 class="datos">30-XXXXXXXX-X</h4>
+    <h4 class="datos">Avenida primera 123</h4>
+    </article>
+    <article class="footer__redes">
+    <ul class="footer__nav flex-row">
+<li class="nav__li">
+    <a class="nav__link" href="">Twitter</a>
+</li>
+<li class="nav__li">
+    <a class="nav__link" href="">Instagram</a>
+</li>
+<li class="nav__li">
+    <a class="nav__link" href="">Facebook</a>
+</li>
+</ul>    
+</article>
+
+</footer>
+
+</body>
+</html>
