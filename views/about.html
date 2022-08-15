@@ -10,51 +10,40 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="shortcut icon" href="../img/logoparahtml.png" type="image/x-icon">
 </head>
-<main class="container">
+<main class="container-fluid bg-opacity-25">
 <body>
     <header class="d-flex justify-content-between">
         <a href="../index.html"><img src="../img/logoparahtml.png" alt="Logo de la empresa"></a>
     <ul class="navbar">
-        <li class="p-2"><a href="../views/productos.html">Productos</a></li>
-        <li class="p-2"><a href="../views/lineasdebano.html">Lineas de baño</a></li>
-        <li class="p-2"><a href="../views/about.html">¿Quiénes somos?</a></li>
-        <li class="p-2"><a href="../views/contact.html">Contacto</a></li>
+        <li class="p-2"><a class="header__link" href="../views/productos.html">Productos</a></li>
+        <li class="p-2"><a class="header__link" href="../views/lineasdebano.html">Lineas de baño</a></li>
+        <li class="p-2"><a class="header__link" href="../views/about.html">¿Quiénes somos?</a></li>
+        <li class="p-2"><a class="header__link" href="../views/contact.html">Contacto</a></li>
     </ul>
     </header>
 
-<section class="home flex-row">
-<h1 class="home__title">¿Quiénes somos?</h1>
-</section>
+    <section id="home" class="d-flex flex-column align-items-center justify-content-center">    
+        <h1 class="home__title">¿QUIÉNES SOMOS?</h1>        
+    </section>
 <section class="about__img flex-row">
-    <img src="../img/logoabout.png" alt="logo de la empresa">
+    <img src="../img/logoabout.png" class="mt-7 img-fluid rounded mx-auto d-block" alt="logo de la empresa">
 
 </section>
 <section class="about__description flex-row">
-<p class="publicity__text-description">Descripción</p>
+<p class="publicity__text-description mt-4 d-flex justify-content-center">Descripción</p>
 </section>
-<footer id="footer" class="footer flex-row ">
-
-    <article class="footer__datos flex-row">
-    <h3 class="datos">OJH SANITARIOS</h3>
-    <h4 class="datos">30-XXXXXXXX-X</h4>
-    <h4 class="datos">Avenida primera 123</h4>
-    </article>
-    <article class="footer__redes">
-    <ul class="footer__nav flex-row">
-<li class="nav__li">
-    <a class="nav__link" href="">Twitter</a>
-</li>
-<li class="nav__li">
-    <a class="nav__link" href="">Instagram</a>
-</li>
-<li class="nav__li">
-    <a class="nav__link" href="">Facebook</a>
-</li>
-</ul>    
-</article>
-
+<footer class="d-flex justify-content-between mt-4 flex-wrap">
+    <div class="datos">
+        <h3 class="datos__name">OJH SANITARIOS</h3>
+        <h4 class="datos__cuit">30-0303456-5</h4>
+        <h4 class="datos__adress">Avenida Primera 123</h4>
+    </div>
+    <ul class="d-flex flex-wrap">
+        <li class="m-2"><h4><a class="footer__link" href="">Twitter</a></h4></li>
+        <li class="m-2"><h4><a class="footer__link" href="">Facebook</a></h4></li>
+        <li class="m-2"><h4><a class="footer__link" href="">Instagram</a></h4></li>
+    </ul>
 </footer>
-
 
 </body>
 </main>

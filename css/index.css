@@ -1,17 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Source+Code+Pro:wght@500&display=swap');
 :root {
     --primary: #1871D9;
     --secondary: #36A2F0;
     --third: #2D2B2B;
     --fourth: #D9D9D9;
+    --text-xs: 14px;
+    --text-s: 16px;
+    --text-m: 20px;
+    --text-l: 24px;
+    --text-xl: 48px;
+    --text-xxl: 72px;
+    --font-primary: 'Comfortaa', cursive;
+    --font-secondary: 'Source Code Pro', monospace;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-primary);
+
 }
 a {
+    font-family: var(--font-secondary);
     text-decoration: none;
 }
 ul {
     list-style-type: none;
+}
+
+#publicity {
+    height: 50vh;
+    width: 100%;
+}
+
+.header__link {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: var(--text-m);
+}
+.header__link:hover {
+    background-color: black;
+    color: white;
+}
+.home__title {
+    color: var(--primary);
+    font-size: var(--text-xxl);
+}
+.home__subtitle {
+    color: var(--secondary);
+    font-size: var(--text-xl);
+    
+}
+.footer__link:hover {
+    background-color: black;
+    color: white;
+}
+.publiticy__text {
+    transform: rotate(357deg);
+}
+.publicity__text-title {
+    font-size: var(--text-xxl);
+color: var(--primary);
+}
+.publicity_text-subtitle {
+    font-size: var(--text-xl);
+    color: var(--secondary);
+}
+.publicity__text-description {
+    font-size: var(--text-l);
+    color: var(--secondary);
+}
+.datos {
+    color: var(--primary);
+
 }
