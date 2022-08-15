@@ -6,82 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OJH SANITARIOS</title>
-    
-    <link rel="shortcut icon" href="./img/logoparahtml.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/logoparahtml.png" type="image/x-icon">
 </head>
 <body>
+    <main class="container">
+    <header id="header" class="header flex-row">
+            <a class="header__logo" href="./index.html"><img src="./img/logoparahtml.png" alt=""></a>
+		
+		<nav class="header__nav flex-row">
+			<ul class="header__ul flex-row">
+                <li class="header__li">
+                    <a class="header__link header__link-active" href="./views/productos.html">Productos</a></li>
+                <li class="header__li">
+                    <a class="header__link" href="./views/lineasdebano.html">Líneas de baño</a></li>
+                <li class="header__li">
+                    <a class="header__link" href="./views/about.html">¿Quiénes somos?</a></li>
+                <li class="header__li">
+                    <a class="header__link" href="./views/contact.html">Contacto</a></li>
+            </ul>
+		</nav>
+	</header>
+   
+<section id="home" class="home flex-row">
+<h1 class="home__title">SANITARIOS OJH</h2>
+<H2 class="home__slogan">El diseño que estás buscando</H3>
+
+</section>
+
+<section id="publicity" class="publicity flex-row">
+    <article class="publicity publicity__text">
+        <h1 class="publicity publicity__text-title">I-BATH</h1>
+    <h2 class="publicity__text-description">Te presentabamos I-BATH, el inodoro del futuro.</H2>   
+</article>
+
+    <iframe class="publicity publicity__video" src="https://www.youtube.com/embed/fhF0DRCQqRw" title="iBath XP101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+<section id="listas-de-productos" class="listas-de-productos flex-row">
+    <article class="listas flex-row">
     
-
-<main class="container-fluid">
-<header class="d-flex justify-content-between">
-    <a href="./index.html"><img src="./img/logoparahtml.png" alt="Logo de la empresa"></a>
-<ul class="navbar">
-    <li class="p-2"><a class="header__link" href="./views/productos.html">Productos</a></li>
-    <li class="p-2"><a class="header__link" href="./views/lineasdebano.html">Lineas de baño</a></li>
-    <li class="p-2"><a class="header__link" href="./views/about.html">¿Quiénes somos?</a></li>
-    <li class="p-2"><a class="header__link" href="./views/contact.html">Contacto</a></li>
-</ul>
-</header>
-<section id="home" class="d-flex flex-column align-items-center justify-content-center">    
-        <h1 class="home__title">SANITARIOS OJH</h1>
-        <H2 class="home__subtitle">El diseño que estás buscando</H2>
-</section>
-<section id="publicity" class="row mt-4">
-    <iframe class="publicity__video col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" src="https://www.youtube.com/embed/fhF0DRCQqRw" title="iBath XP101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="publiticy__text col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column align-items-center justify-content-center">
-    <h2 class="publicity__text-title">I-BATH</h2>
-    <h3 class="publicity_text-subtitle">Te presentamos I-bath, el inodoro del futuro</h3>
-</div>
-</section>
-<section class="d-flex justify-content-around flex-wrap">
-    <ul class="m-2 border border-primary p-4 mt-4">
-        <li><h3><a href="">Línea 1</a></l</h3></li>
-        <li><h4><a href="">Producto 1</a></h4></li>
-        <li><h4><a href="">Producto 2</a></h4></li>
-        <li><h4><a href="">Producto 3</a></h4></li>
-        <li><h4><a href="">Producto 4</a></h4></li>
+    
+    <ul class="lista__ul">
+       <li> <a class="lista__title" href="./views/lineasdebano.html">Línea de baño1</a></li>
+        <li class="lista__item"><a class="lista__link" href="./views/productos.html#inodoros">Inodoros</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Bidets</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Depositos</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Asientos</a></li>
     </ul>
-    <ul class="m-2  border border-primary p-4 mt-4">
-        <li><h3><a href="">Línea 2</a></l</h3></li>
-        <li><h4><a href="">Producto 1</a></h4></li>
-        <li><h4><a href="">Producto 2</a></h4></li>
-        <li><h4><a href="">Producto 3</a></h4></li>
-        <li><h4><a href="">Producto 4</a></h4></li>
+</article>
+<article class="listas">
+    
+    
+    <ul class="lista__ul">
+       <li> <a class="lista__title" href="./views/lineasdebano.html">Línea de baño2</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Inodoros</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Bidets</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Depositos</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Asientos</a></li>
     </ul>
-    <ul class="m-2  border border-primary p-4 mt-4">
-        <li><h3><a href="">Línea 3</a></l</h3></li>
-        <li><h4><a href="">Producto 1</a></h4></li>
-        <li><h4><a href="">Producto 2</a></h4></li>
-        <li><h4><a href="">Producto 3</a></h4></li>
-        <li><h4><a href="">Producto 4</a></h4></li>
+</article>
+<article class="listas">
+    
+    
+    <ul class="lista__ul">
+       <li> <a class="lista__title" href="./views/lineasdebano.html">Línea de baño3</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Inodoros</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Bidets</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Depositos</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Asientos</a></li>
     </ul>
-    <ul class="m-2  border border-primary p-4 mt-4">
-        <li><h3><a href="">Línea 4</a></l</h3></li>
-        <li><h4><a href="">Producto 1</a></h4></li>
-        <li><h4><a href="">Producto 2</a></h4></li>
-        <li><h4><a href="">Producto 3</a></h4></li>
-        <li><h4><a href="">Producto 4</a></h4></li>
+</article>
+<article class="listas">    
+    <ul class="lista__ul">
+       <li> <a class="lista__title" href="./views/lineasdebano.html">Línea de baño4</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Inodoros</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Bidets</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Depositos</a></li>
+        <li class="lista__item"><a class="lista__link" href="">Asientos</a></li>
     </ul>
-
+</article>
 </section>
 
-<footer class="d-flex justify-content-between mt-4 flex-wrap">
-    <div class="datos">
-        <h3 class="datos__name">OJH SANITARIOS</h3>
-        <h4 class="datos__cuit">30-0303456-5</h4>
-        <h4 class="datos__adress">Avenida Primera 123</h4>
-    </div>
-    <ul class="d-flex flex-wrap">
-        <li class="m-2"><h4><a class="footer__link" href="">Twitter</a></h4></li>
-        <li class="m-2"><h4><a class="footer__link" href="">Facebook</a></h4></li>
-        <li class="m-2"><h4><a class="footer__link" href="">Instagram</a></h4></li>
-    </ul>
+
+<footer id="footer" class="footer flex-row ">
+
+        <article class="footer__datos flex-row">
+        <h3 class="datos">OJH SANITARIOS</h3>
+        <h4 class="datos">30-XXXXXXXX-X</h4>
+        <h4 class="datos">Avenida primera 123</h4>
+        </article>
+        <article class="footer__redes">
+        <ul class="footer__nav flex-row">
+    <li class="nav__li">
+        <a class="nav__link" href="">Twitter</a>
+    </li>
+    <li class="nav__li">
+        <a class="nav__link" href="">Instagram</a>
+    </li>
+    <li class="nav__li">
+        <a class="nav__link" href="">Facebook</a>
+    </li>
+</ul>    
+</article>
+    
 </footer>
-</body>
-</main>
 
+</main>
+</body>
 
 </html>
