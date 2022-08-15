@@ -57,20 +57,13 @@
         text-decoration: none;
     }
     /*Helpers */
-    .cointainer {
-        margin: 0 auto;
-        max-width: 1200px;
-        min-width: 320px;
-
-    }
+ 
     .flex-row {
         display: flex;
         flex-direction: row;
     }
     /*Header*/
     .header{ 
-      margin:var(--spacing-lg) ;
-      gap: var(--spacing-lg);
       font-family: var(--textLinks);
       display: flex;
       align-items: center;
@@ -122,6 +115,7 @@
 }
 
 .home {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -244,6 +238,10 @@
 .lista__ul {
     flex-direction: column;
     border: 2px groove var(--secondary);
+    
+    }
+    .lista__ul:hover {
+        translate: (25px,25px );
     }
     .lista__title {
         margin: var(--spacing--sm);
@@ -289,6 +287,7 @@
     font-size: var(--text-mid);
     flex-wrap: wrap;
     background: radial-gradient(to left, var(--four), var(--primary))
+    
 }
 .footer__datos {
      flex-direction: column;
