@@ -287,7 +287,7 @@
     font-size: var(--text-mid);
     flex-wrap: wrap;
     background: radial-gradient(to left, var(--four), var(--primary))
-    
+
 }
 .footer__datos {
      flex-direction: column;
@@ -480,6 +480,12 @@
    
 }
 /*Fin 480px*/
+@media (max-width: 660px) {
+    .listas {
+        padding-top: var(--spacing--lg);
+    }
+    
+}
 /*Inicio responsive 768px*/
 @media (max-width: 780px) {
 
