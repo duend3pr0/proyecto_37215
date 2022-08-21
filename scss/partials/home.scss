@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-lg);
+    color: var(--primary);
+    flex-wrap: wrap;
+    
+
+}
+.home__title {
+    display: block;    
+    font-size: var(--text-xxl);
+    padding-bottom: var(--spacing-lg);
+    margin: 0 20vh 0 20vh;
+    font-size: 500;
+    color: var(--third);
+    animation: rotate infinite ease-in-out 8s 3s;
+    
+}
+.home__slogan {
+    display: block;
+    font-size: var(--text-xl);
+    color: var(--secondary);
+    
+}

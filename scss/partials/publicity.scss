@@ -1,0 +1,36 @@
+.publicity__text {
+    grid-row: span 2/4;
+    grid-column: 2/6;
+    transform: rotate(357deg);
+    /* transform: skewy(45deg); */
+
+}
+.publicity__text-title {
+   
+    color: var(--third);
+    font-size: var(--text-xl)
+
+}
+.publicity__text-description {
+     font-size: var(--text-lg);
+        margin: var(--spacing-lg) auto;
+        color: var(--secondary);
+
+}
+.publicity__video {
+       grid-column: 7/12;
+    
+    grid-row: span 4;
+    height: 100%;
+    width: 100%;
+    border: 2px double var(--primary);
+    padding: var(--spacing-lg) auto;
+
+
+    /* transform: rotate(3deg);        */
+}
+.publicity__video:hover{
+    height: 105%;
+    width: 105%;
+    transition: all 1s;
+}
