@@ -1,0 +1,12 @@
+.form {
+    justify-content: center;
+    flex-direction: column;
+    margin: $spacing-lg;
+    width: 50%;
+
+}
+.form__input {
+    font-size: $text-mid;
+    color: $primary;
+    gap: $spacing-md;
+}

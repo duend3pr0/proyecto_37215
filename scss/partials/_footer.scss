@@ -1,42 +1,41 @@
-#footer {
+.footer {
     height: 15vh;
     justify-content: space-between;
     align-items: center;
-    margin: var(--spacing-lg);
-    font-size: var(--text-mid);
+    margin: $spacing-lg;
+    font-size: $text-mid;
     flex-wrap: wrap;
-    background: radial-gradient(to left, var(--four), var(--primary))
-
-}
-.footer__datos {
+    background: radial-gradient(to left, $four), $primary;
+&__datos {
      flex-direction: column;
      width: 50%;
-}
-.datos {
-    font-size: var(--text-mid);
-    color: var(--secondary);
-}
-.footer__redes {
+     font-size: $text-mid;
+     color: $secondary;
+    
+ }
+
+   
+&__redes {
     flex-wrap: wrap;
 }
-.footer__nav {
+&__nav {
     width: 50%;
     justify-content: space-evenly;
    }
-   .footer__ul {
-    color: var(--secondary);
+   &__ul {
+    color: $secondary;
    }
-    .nav__link {
-    color: var(--third);    
+    &__link {
+    color: $third;    
     padding: 1rem;
-    font-size: var(--text-mid);
+    font-size: $text-mid;
     font-weight: 500;
-    transition: all .3s;
-
-   }
-   .nav__link:hover {
-    background: linear-gradient(to right, var(--third), var(--secondary));
-    font-family: var(--textLinks);
-    color: var(--primary);
+    transition: all .3s; 
+   &:hover {
+    background: linear-gradient(to right, $third), $secondary;
+    font-family: $textLinks;
+    color: $primary;
     font-weight: 800;
+}
+}
 }

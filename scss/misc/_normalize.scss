@@ -1,3 +1,4 @@
+
 /*Normaliza*/
 
 *{
@@ -9,8 +10,8 @@
         font-size: 62,5%;
     }
     body{
-        font-family: var(--text-base);
-        color: var(--primary);
+        font-family: $text-base;
+        color: $primary;
         margin: 0;
 
     }
@@ -19,10 +20,11 @@
     }
     ul {
         list-style-type: none;
-        font-family: var(--textLinks);
+        font-family: $textLinks;
 
         
     }
       a {
         text-decoration: none;
     }
+

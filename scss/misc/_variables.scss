@@ -1,26 +1,27 @@
-:root {
 
-    /*pallete*/
-    --primary: #2D2B2B;
-    --secondary: #36A2F0;
-    --third: #1871D9;
-    --four: #FFFAFA;
-    /*font family*/
+   
+    $primary: #2D2B2B;
+    $secondary: #36A2F0;
+    $third: #1871D9;
+    $four: #FFFAFA;
+   
 
---text-base: font-family: 'Barlow', sans-serif;
---textLinks: font-family: 'Roboto Slab', serif;
 
-/*Spacings*/
 
---spacing-lg: 48px;
---spacing-md: 36px;
---spacing--sm: 24px;
-/*Family Sizes*/
---text-xxl: 72px;
---text-xl: 48px;
---text-lg: 32px;
---text-mid: 20px;
---text-xs: 16px;
---text-sm: 14px;
 
-}
+$text-base: 'Barlow', sans-serif;
+$textLinks: 'Roboto Slab', serif;
+
+
+
+
+$spacing-lg: 48px;
+$spacing-md: 36px;
+$spacing-sm: 24px;
+$text-xxl: 72px;
+$text-xl: 48px;
+$text-lg: 32px;
+$text-mid: 20px;
+$text-xs: 16px;
+$text-sm: 14px;
+
