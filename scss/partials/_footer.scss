@@ -1,0 +1,49 @@
+.footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: $spacing-lg;
+    font-size: $text-mid;
+    flex-wrap: wrap;
+    background: radial-gradient(to left, $four), $primary;
+&__datos {
+     flex-direction: column;
+     width: 50%;
+     font-size: $text-mid;
+     color: $secondary;
+     &--name {
+
+     }
+    &--cuit {
+
+    }
+    &--adress {
+       
+    }
+ }
+
+    &__nav {
+    width: 50%;
+    justify-content: space-evenly;
+    & .nav__li {
+        &--link{
+            color: $third;    
+            padding: 1rem;
+            font-size: $text-mid;
+            font-weight: 500;
+            transition: all .3s;
+    
+            &:hover{
+                background: linear-gradient(to right, $third), $secondary;
+                font-family: $textLinks;
+                color: $primary;
+                font-weight: 800;
+            }
+        }
+        color: $secondary;
+    }
+}
+}
+
+    
+

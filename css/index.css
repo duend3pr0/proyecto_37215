@@ -73,24 +73,22 @@ a {
     width: 50%;
     font-size: 20px;
     color: #36A2F0; }
-  .footer__redes {
-    flex-wrap: wrap; }
   .footer__nav {
     width: 50%;
     justify-content: space-evenly; }
-  .footer__ul {
-    color: #36A2F0; }
-  .footer__link {
-    color: #1871D9;
-    padding: 1rem;
-    font-size: 20px;
-    font-weight: 500;
-    transition: all .3s; }
-    .footer__link:hover {
-      background: linear-gradient(to right, #1871D9), #36A2F0;
-      font-family: "Roboto Slab", serif;
-      color: #2D2B2B;
-      font-weight: 800; }
+    .footer__nav .nav__li {
+      color: #36A2F0; }
+      .footer__nav .nav__li--link {
+        color: #1871D9;
+        padding: 1rem;
+        font-size: 20gitpx;
+        font-weight: 500;
+        transition: all .3s; }
+        .footer__nav .nav__li--link:hover {
+          background: linear-gradient(to right, #1871D9), #36A2F0;
+          font-family: "Roboto Slab", serif;
+          color: #2D2B2B;
+          font-weight: 800; }
 
 .home {
   display: flex;
