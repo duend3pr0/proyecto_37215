@@ -4,33 +4,37 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: $spacing-md;
   &__logo{
       display: block;
       max-width: 150px;
       min-width: 120px;
-      padding-bottom: 1rem;
+      ;
       }
   &__nav{        
   justify-content: space-between;
   flex-wrap: wrap;
   }
       &__ul{
-              justify-content: flex-end;
+              justify-content: center;
               align-items: center;
               flex-wrap: wrap;
               flex: 1 1 250px; }
 
               &__link {
-                  color: $third;    
+                  color: $secondary;    
                   padding: 1rem;
                   font-size: $text-mid;
                   font-weight: 500;
                   transition: all .3s;
+                  text-shadow: 2px 2px $third;
                   &:hover {
-                      background: linear-gradient(to right, $third), $secondary;
+                      background: linear-gradient(to right, $secondary), $fourth;
                   font-family: $textLinks;
-                  color: $primary;
+                  color: $third;
                   font-weight: 800;
+                  border: 3px solid $secondary;
+                  text-shadow: 2px 2px $secondary;
 
                   }
                 }

@@ -1,14 +1,14 @@
+body{
+    background: $primary;
+}
 .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: $spacing-lg;
     color: $primary;
     flex-wrap: wrap;
-    
-
-&__title {
+    &__title {
     display: block;    
     font-size: $text-xxl;
     padding-bottom: $spacing-lg;

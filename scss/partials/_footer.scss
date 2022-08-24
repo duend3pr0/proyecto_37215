@@ -1,11 +1,10 @@
 .footer {
-    height: 15vh;
-    justify-content: space-between;
+    font-family: $textLinks;
+    display: flex;
     align-items: center;
-    margin: $spacing-lg;
-    font-size: $text-mid;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background: radial-gradient(to left, $four), $primary;
+    margin: $spacing-md;
 &__datos {
      flex-direction: column;
      width: 50%;
@@ -23,24 +22,26 @@
  }
 
     &__nav {
-    width: 50%;
-    justify-content: space-evenly;
+        
     & .nav__li {
+        
         &--link{
-            color: $third;    
-            padding: 1rem;
-            font-size: $text-mid;
-            font-weight: 500;
-            transition: all .3s;
-    
+            color: $secondary;    
+                  padding: 1rem;
+                  font-size: $text-mid;
+                  font-weight: 500;
+                  transition: all .3s;
+                  text-shadow: 2px 2px $third;
             &:hover{
-                background: linear-gradient(to right, $third), $secondary;
                 font-family: $textLinks;
-                color: $primary;
+                color: $third;
                 font-weight: 800;
+                border: 3px solid $secondary;
+                text-shadow: 2px 2px $secondary;
+            
             }
         }
-        color: $secondary;
+        
     }
 }
 }
