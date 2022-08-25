@@ -1,5 +1,5 @@
 body{
-    background: $primary;
+    
 }
 .home {
     display: flex;
@@ -8,21 +8,21 @@ body{
     align-items: center;
     color: $primary;
     flex-wrap: wrap;
+    margin:  $spacing-lg 0;
     &__title {
     display: block;    
     font-size: $text-xxl;
-    padding-bottom: $spacing-lg;
-    margin: 0 20vh 0 20vh;
     font-size: 500;
-    color: $third;
+    color: $primary;
+    margin-bottom: $spacing-md;
     animation: rotate infinite ease-in-out 8s 3s;
     
 }
 
 &__slogan {
     display: block;
-    font-size: $text-xl;
-    color: $secondary;
+    font-size: ($text-xl*0.75);
+    color: $fourth;
     
 }
 }
@@ -37,19 +37,20 @@ body{
     grid-row: span 3/5;
     grid-column: 2/6;
     transform: rotate(357deg);
+    color: $secondary;
     /* transform: skewy(45deg); */
 
 &-title {
    
-    color: $third;
-    font-size: $text-xl
+    color: $primary;
+    font-size: $text-xl;
 
 }
 
 &-description {
      font-size: $text-lg;
         margin: $spacing-lg auto;
-        color: $secondary;
+        color: $fourth;
 
 }
 }
@@ -73,16 +74,17 @@ body{
 }}}
 
 #listas-de-productos {
-    margin: $spacing-lg $spacing-lg;
-    font-size: $text-lg;
+    margin-top: $spacing-md;
+    font-size: $text-mid;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: $spacing-lg;
-    }
+     }
 .lista {
 &__ul {
     flex-direction: column;
-    border: 2px groove $secondary;
+    border: 2px groove $primary;
+    border-radius: 15px;
+    background-color: $secondary;
     
     &:hover {
         translate: (25px,25px );
@@ -90,7 +92,8 @@ body{
 
     &--title {
         // margin: $spacing--lg;
-        color: $third;
+        color: $primary;
+        text-shadow: 2px $third;
     }
 }
 &__item {
@@ -99,7 +102,8 @@ body{
     }
 
     &__link {
-        color: $third;    
+        color: $fourth;
+        text-shadow: 2px $third;    
         padding: 1rem;
         font-size: $text-mid;
         font-weight: 500;
