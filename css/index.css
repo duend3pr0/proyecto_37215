@@ -57,17 +57,16 @@ a {
   .header__link {
     color: #FFFAFA;
     padding: 1rem;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 500;
     transition: all .3s;
     text-shadow: 2px 2px #2D2B2B; }
     .header__link:hover {
       background: linear-gradient(to right, #FFFAFA), #36A2F0;
       font-family: "Roboto Slab", serif;
-      color: #2D2B2B;
+      color: #FFFAFA;
       font-weight: 800;
-      border: 3px solid #FFFAFA;
-      text-shadow: 2px 2px #FFFAFA; }
+      border: 3px solid #FFFAFA; }
   .header__link--active {
     border: 2px solid #1871D9; }
 
@@ -98,7 +97,7 @@ a {
       text-shadow: 2px 2px #FFFAFA; }
 
 body {
-  background: #1871D9; }
+  background: #cfc6b5; }
 
 .home {
   display: flex;
@@ -118,7 +117,8 @@ body {
   .home__slogan {
     display: block;
     font-size: 48px;
-    color: #FFFAFA; }
+    color: #FFFAFA;
+    text-shadow: 2px 2px #2D2B2B; }
 
 .publicity {
   height: 60vh;

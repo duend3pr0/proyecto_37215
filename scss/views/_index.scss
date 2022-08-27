@@ -1,5 +1,5 @@
 body{
-    background: $primary;
+    background: rgb(207, 198, 181);
 }
 .home {
     display: flex;
@@ -23,7 +23,7 @@ body{
     display: block;
     font-size: $text-xl;
     color: $secondary;
-    
+    text-shadow: 2px 2px $third;
 }
 }
 .publicity {
@@ -36,6 +36,7 @@ body{
 &__text {
     grid-row: span 3/5;
     grid-column: 2/6;
+    text-shadow: 2px 2px $third;
     transform: rotate(357deg);
     /* transform: skewy(45deg); */
 

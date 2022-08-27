@@ -24,17 +24,17 @@
               &__link {
                   color: $secondary;    
                   padding: 1rem;
-                  font-size: $text-mid;
+                  font-size: $text-lg;
                   font-weight: 500;
                   transition: all .3s;
                   text-shadow: 2px 2px $third;
                   &:hover {
-                      background: linear-gradient(to right, $secondary), $fourth;
+                  background: linear-gradient(to right, $secondary), $fourth;
                   font-family: $textLinks;
-                  color: $third;
+                  color: $secondary;
                   font-weight: 800;
                   border: 3px solid $secondary;
-                  text-shadow: 2px 2px $secondary;
+                  // text-shadow: 2px 2px $secondary;
 
                   }
                 }
