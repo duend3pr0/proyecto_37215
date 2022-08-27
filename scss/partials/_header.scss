@@ -5,15 +5,19 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: $spacing-md;
+  background: $fourth;
+  border-bottom: 1px solid $fourth;
   &__logo{
       display: block;
       max-width: 150px;
       min-width: 120px;
+      margin: $spacing-sm;
       ;
       }
   &__nav{        
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: $spacing-sm;
   }
       &__ul{
               justify-content: center;

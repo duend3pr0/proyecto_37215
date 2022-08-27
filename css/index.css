@@ -11,7 +11,8 @@ html {
 body {
   font-family: "Barlow", sans-serif;
   color: #1871D9;
-  margin: 0; }
+  margin: 0;
+  background: #f1eee3; }
 
 img {
   width: 100%; }
@@ -31,24 +32,24 @@ a {
   display: flex;
   flex-direction: column; }
 
-.container {
-  width: 90%;
-  margin: 0 48px; }
-
 .header {
   font-family: "Roboto Slab", serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 36px; }
+  margin-top: 36px;
+  background: #36A2F0;
+  border-bottom: 1px solid #36A2F0; }
   .header__logo {
     display: block;
     max-width: 150px;
-    min-width: 120px; }
+    min-width: 120px;
+    margin: 24px; }
   .header__nav {
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 24px; }
   .header__ul {
     justify-content: center;
     align-items: center;
@@ -76,14 +77,15 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 36px; }
+  margin-top: 36px;
+  background: #36A2F0;
+  border-bottom: 1px solid #36A2F0; }
   .footer__datos {
     flex-direction: column;
     width: 50%;
     font-size: 20px;
-    color: #FFFAFA; }
-  .footer__nav .nav__li--link {
     color: #FFFAFA;
+<<<<<<< HEAD
     padding: 1rem;
     font-size: 20px;
     font-weight: 500;
@@ -98,6 +100,31 @@ a {
 
 body {
   background: #cfc6b5; }
+=======
+    margin: 24px; }
+    .footer__datos--name {
+      font-size: 20px; }
+    .footer__datos--cuit {
+      font-size: 15px; }
+    .footer__datos--adress {
+      font-size: 15px; }
+  .footer__nav {
+    align-items: flex-end; }
+    .footer__nav .nav__li--link {
+      color: #FFFAFA;
+      padding: 1rem;
+      font-size: 20px;
+      font-weight: 500;
+      transition: all .3s;
+      text-shadow: 2px 2px #2D2B2B; }
+      .footer__nav .nav__li--link:hover {
+        background: linear-gradient(to right, #FFFAFA), #36A2F0;
+        font-family: "Roboto Slab", serif;
+        color: #2D2B2B;
+        font-weight: 800;
+        border: 3px solid #FFFAFA;
+        text-shadow: 2px 2px #FFFAFA; }
+>>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
 
 .home {
   display: flex;
@@ -105,20 +132,25 @@ body {
   justify-content: center;
   align-items: center;
   color: #1871D9;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 48px 0; }
   .home__title {
     display: block;
     font-size: 72px;
-    padding-bottom: 48px;
-    margin: 0 20vh 0 20vh;
     font-size: 500;
-    color: #2D2B2B;
+    color: #1871D9;
+    margin-bottom: 36px;
     animation: rotate infinite ease-in-out 8s 3s; }
   .home__slogan {
     display: block;
+<<<<<<< HEAD
     font-size: 48px;
     color: #FFFAFA;
     text-shadow: 2px 2px #2D2B2B; }
+=======
+    font-size: 36px;
+    color: #36A2F0; }
+>>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
 
 .publicity {
   height: 60vh;
@@ -130,14 +162,15 @@ body {
     grid-row: span 3/5;
     grid-column: 2/6;
     transform: rotate(357deg);
+    color: #FFFAFA;
     /* transform: skewy(45deg); */ }
     .publicity__text-title {
-      color: #2D2B2B;
+      color: #1871D9;
       font-size: 48px; }
     .publicity__text-description {
       font-size: 32px;
       margin: 48px auto;
-      color: #FFFAFA; }
+      color: #36A2F0; }
   .publicity__video {
     grid-column: 7/12;
     grid-row: span 4;
@@ -152,26 +185,29 @@ body {
       transition: all 1s; }
 
 #listas-de-productos {
-  margin: 48px 48px;
-  font-size: 32px;
+  margin-top: 36px;
+  font-size: 20px;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 48px; }
+  flex-wrap: wrap; }
 
 .lista__ul {
   flex-direction: column;
-  border: 2px groove #FFFAFA; }
+  border: 2px groove #1871D9;
+  border-radius: 15px;
+  background-color: #FFFAFA; }
   .lista__ul:hover {
     translate: 25px, 25px; }
   .lista__ul--title {
-    color: #2D2B2B; }
+    color: #1871D9;
+    text-shadow: 2px #2D2B2B; }
 
 .lista__item {
   margin: 24px 24px;
   color: #FFFAFA; }
 
 .lista__link {
-  color: #2D2B2B;
+  color: #36A2F0;
+  text-shadow: 2px #2D2B2B;
   padding: 1rem;
   font-size: 20px;
   font-weight: 500;
