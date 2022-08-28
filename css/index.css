@@ -58,7 +58,7 @@ a {
   .header__link {
     color: #FFFAFA;
     padding: 1rem;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
     transition: all .3s;
     text-shadow: 2px 2px #2D2B2B; }
@@ -85,23 +85,8 @@ a {
     width: 50%;
     font-size: 20px;
     color: #FFFAFA;
-<<<<<<< HEAD
-    padding: 1rem;
-    font-size: 20px;
-    font-weight: 500;
-    transition: all .3s;
+    margin: 24px;
     text-shadow: 2px 2px #2D2B2B; }
-    .footer__nav .nav__li--link:hover {
-      font-family: "Roboto Slab", serif;
-      color: #2D2B2B;
-      font-weight: 800;
-      border: 3px solid #FFFAFA;
-      text-shadow: 2px 2px #FFFAFA; }
-
-body {
-  background: #cfc6b5; }
-=======
-    margin: 24px; }
     .footer__datos--name {
       font-size: 20px; }
     .footer__datos--cuit {
@@ -124,7 +109,9 @@ body {
         font-weight: 800;
         border: 3px solid #FFFAFA;
         text-shadow: 2px 2px #FFFAFA; }
->>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
+
+body {
+  background: #cfc6b5; }
 
 .home {
   display: flex;
@@ -143,14 +130,11 @@ body {
     animation: rotate infinite ease-in-out 8s 3s; }
   .home__slogan {
     display: block;
-<<<<<<< HEAD
     font-size: 48px;
     color: #FFFAFA;
-    text-shadow: 2px 2px #2D2B2B; }
-=======
+    text-shadow: 2px 2px #2D2B2B;
     font-size: 36px;
     color: #36A2F0; }
->>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
 
 .publicity {
   height: 60vh;
@@ -161,6 +145,7 @@ body {
   .publicity__text {
     grid-row: span 3/5;
     grid-column: 2/6;
+    text-shadow: 2px 2px #2D2B2B;
     transform: rotate(357deg);
     color: #FFFAFA;
     /* transform: skewy(45deg); */ }
@@ -212,6 +197,29 @@ body {
   font-size: 20px;
   font-weight: 500;
   transition: all .3s; }
+
+.productos {
+  height: 30vh;
+  justify-content: center;
+  align-items: center; }
+  .productos .productos__inodoro {
+    color: 0; }
+  .productos .productos__img {
+    border: 1px solid #2D2B2B;
+    border-radius: 10px; }
+  .productos .productos__img {
+    height: 100%;
+    width: 50%; }
+  .productos .productos__link {
+    color: #36A2F0; }
+    .productos .productos__link--title {
+      color: #1871D9; }
+
+.carrousel__text {
+  margin-top: 48px;
+  text-align: center;
+  color: #2D2B2B;
+  font-size: 48px; }
 
 .form {
   justify-content: center;

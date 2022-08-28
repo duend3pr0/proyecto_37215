@@ -1,9 +1,5 @@
 body{
-<<<<<<< HEAD
     background: rgb(207, 198, 181);
-=======
-    
->>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
 }
 .home {
     display: flex;
@@ -25,16 +21,12 @@ body{
 
 &__slogan {
     display: block;
-<<<<<<< HEAD
     font-size: $text-xl;
     color: $secondary;
     text-shadow: 2px 2px $third;
-=======
     font-size: ($text-xl*0.75);
     color: $fourth;
-    
->>>>>>> a7bdb47ffc5ee7d06619380c43dadf1ec81940eb
-}
+   }
 }
 .publicity {
     height: 60vh;
