@@ -10,15 +10,14 @@ body{
     flex-wrap: wrap;
     margin:  $spacing-lg 0;
     &__title {
+    @include title ($text-base,$text-xxl); /*mixin aplicado*/
     display: block;    
-    font-size: $text-xxl;
     font-size: 500;
     color: $primary;
     margin-bottom: $spacing-md;
     animation: rotate infinite ease-in-out 8s 3s;
     
 }
-
 &__slogan {
     display: block;
     font-size: $text-xl;
@@ -26,7 +25,8 @@ body{
     text-shadow: 2px 2px $third;
     font-size: ($text-xl*0.75);
     color: $fourth;
-   }
+   
+}
 }
 .publicity {
     height: 60vh;
@@ -43,7 +43,7 @@ body{
     color: $secondary;
     /* transform: skewy(45deg); */
 
-&-title {
+&--title {
    
     color: $primary;
     font-size: $text-xl;

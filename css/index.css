@@ -1,4 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Roboto+Slab:wght@300;500;700&display=swap");
+/*cree el mapa pero aún no borré la variable porque hay htmls que todavia la ocupan
+   ya que no he actualizado todo el css para que se utilice solo los maps*/
 /*Normaliza*/
 * {
   margin: 0;
@@ -40,6 +43,7 @@ a {
   flex-wrap: wrap;
   margin-top: 36px;
   background: #36A2F0;
+  /*Hecho con mapa*/
   border-bottom: 1px solid #36A2F0; }
   .header__logo {
     display: block;
@@ -49,7 +53,8 @@ a {
   .header__nav {
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 24px; }
+    margin: 36px;
+    /*map get*/ }
   .header__ul {
     justify-content: center;
     align-items: center;
@@ -95,14 +100,19 @@ a {
       font-size: 15px; }
   .footer__nav {
     align-items: flex-end; }
-    .footer__nav .nav__li--link {
-      color: #FFFAFA;
+    .footer__nav .nav__li, .footer__nav .nav__li--twitter, .footer__nav .nav__li--facebook, .footer__nav .nav__li--instagram {
       padding: 1rem;
       font-size: 20px;
       font-weight: 500;
       transition: all .3s;
       text-shadow: 2px 2px #2D2B2B; }
-      .footer__nav .nav__li--link:hover {
+      .footer__nav .nav__li--twitter {
+        color: blue; }
+      .footer__nav .nav__li--facebook {
+        color: red; }
+      .footer__nav .nav__li--instagram {
+        color: yellow; }
+      .footer__nav .nav__li:hover, .footer__nav .nav__li--twitter:hover, .footer__nav .nav__li--facebook:hover, .footer__nav .nav__li--instagram:hover {
         background: linear-gradient(to right, #FFFAFA), #36A2F0;
         font-family: "Roboto Slab", serif;
         color: #2D2B2B;
@@ -122,8 +132,10 @@ body {
   flex-wrap: wrap;
   margin: 48px 0; }
   .home__title {
-    display: block;
+    font-family: "Barlow", sans-serif;
     font-size: 72px;
+    /*mixin aplicado*/
+    display: block;
     font-size: 500;
     color: #1871D9;
     margin-bottom: 36px;
@@ -149,7 +161,7 @@ body {
     transform: rotate(357deg);
     color: #FFFAFA;
     /* transform: skewy(45deg); */ }
-    .publicity__text-title {
+    .publicity__text--title {
       color: #1871D9;
       font-size: 48px; }
     .publicity__text-description {

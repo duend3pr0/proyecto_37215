@@ -5,8 +5,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: $spacing-md;
-  background: $fourth;
-  border-bottom: 1px solid $fourth;
+  background: map-get($colors, fourth); /*Hecho con mapa*/
+  border-bottom: 1px solid map-get($colors, fourth);
   &__logo{
       display: block;
       max-width: 150px;
@@ -17,7 +17,7 @@
   &__nav{        
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: $spacing-sm;
+  margin: map-get($spacings, md); /*map get*/
   }
       &__ul{
               justify-content: center;
@@ -28,16 +28,16 @@
               &__link {
                   color: $secondary;    
                   padding: 1rem;
-                  font-size: $text-mid;
+                  font-size: map-get($font-sizes, mid );
                   font-weight: 500;
                   transition: all .3s;
-                  text-shadow: 2px 2px $third;
+                  text-shadow: 2px 2px map-get($colors , third);
                   &:hover {
                   background: linear-gradient(to right, $secondary), $fourth;
                   font-family: $textLinks;
-                  color: $secondary;
+                  color: map-get($colors, secondary);
                   font-weight: 800;
-                  border: 3px solid $secondary;
+                  border: 3px solid map-get($colors, secondary);
                   // text-shadow: 2px 2px $secondary;
 
                   }

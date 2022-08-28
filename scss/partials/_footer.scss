@@ -32,14 +32,24 @@
         align-items: flex-end;
         
     & .nav__li {
-        
-        &--link{
-            color: $secondary;    
-                  padding: 1rem;
+        padding: 1rem;
                   font-size: $text-mid;
                   font-weight: 500;
                   transition: all .3s;
                   text-shadow: 2px 2px $third;
+        &--twitter{ 
+            @extend .nav__li;
+            color: blue;}
+            &--facebook {
+                @extend .nav__li;
+                color: red;
+            }
+            &--instagram {
+                @extend .nav__li;
+                color: yellow;
+            }
+
+                  
             &:hover{
                 background: linear-gradient(to right, $secondary), $fourth;
                 font-family: $textLinks;
@@ -53,7 +63,7 @@
         
     }
 }
-}
+
 
     
 
