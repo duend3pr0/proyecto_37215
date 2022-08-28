@@ -1,9 +1,5 @@
 .header{ 
   font-family: $textLinks;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: $spacing-md;
   background: map-get($colors, fourth); /*Hecho con mapa*/
   border-bottom: 1px solid map-get($colors, fourth);
@@ -16,8 +12,7 @@
       }
   &__nav{        
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin: map-get($spacings, md); /*map get*/
+   margin-right: map-get($spacings, md); /*map get*/
   }
       &__ul{
               justify-content: center;

@@ -27,20 +27,31 @@ ul {
 a {
   text-decoration: none; }
 
-.flex-row {
-  display: flex;
-  flex-direction: row; }
-
 .flex-column {
   display: flex;
   flex-direction: column; }
 
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.wrap {
+  flex-direction: wrap; }
+
+.ai-center {
+  align-items: center; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-spacebetween {
+  justify-content: space-between; }
+
+.fs-xxl {
+  font-size: 48px; }
+
 .header {
   font-family: "Roboto Slab", serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 36px;
   background: #36A2F0;
   /*Hecho con mapa*/
@@ -52,8 +63,7 @@ a {
     margin: 24px; }
   .header__nav {
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 36px;
+    margin-right: 36px;
     /*map get*/ }
   .header__ul {
     justify-content: center;
