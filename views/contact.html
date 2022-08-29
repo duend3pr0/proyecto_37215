@@ -12,11 +12,11 @@
 </head>
 <main >
 <body class="container">
-    <header id="header" class="header flex-row">
+    <header id="header" class="header flex-roww">
         <a class="header__logo" href="../index.html"><img src="../img/logoparahtml.png" alt=""></a>
     
-    <nav class="header header__nav flex-row">
-        <ul class="header__nav header__ul flex-row">
+    <nav class="header header__nav flex-roww">
+        <ul class="header__nav header__ul flex-roww">
             <li class="header__ul--li">
                 <a class="header__link header__link-active" href="../views/productos.html">Productos</a></li>
             <li class="header__ul--li">
@@ -36,23 +36,23 @@
 <!-- formulario de contacto -->
 <section id="contact">
     <article>
-        <form class="form">
-            <div class="mb-3">
-            <label for="text">Nombre</label>
+        <form class="form flex-column">
+            <div class=" mb-3 form__datos">
+            <label class="flex-roww jc-center form__datos--name" for="text">Nombre</label>
             <input class="form-control" type="text" name="nombre" required>
         </div>
-            <div class="mb-3">
-            <label for="text">Apellido</label>
+            <div class="mb-3 form__datos">
+            <label class="flex-roww jc-center form__datos--lastname" for="text">Apellido</label>
             
             <input class="form-control" type="text"  name="apellido" id="" required>
         </div>
-            <div class="mb-3">
-            <label for="email">E-mail</label>
+            <div class="mb-3  form__datos">
+            <label class="flex-roww jc-center form__datos--email" for="email">E-mail</label>
            
             <input class="form-control" type="email"  name="email"required>
         </div>
-            <div class="mb-3">
-            <label for="number">Edad</label>
+            <div class="mb-3 form__datos">
+            <label class="flex-roww jc-center form__datos--age" for="number">Edad</label>
             <input class="form-control" type="number"  required min="1" max="99">
         </div>
             <p class="form__label">Sexo:</p>
@@ -107,9 +107,9 @@
         <h4 class="footer__datos--adress">Avenida Primera 123</h4>
     </div>
     <ul class="footer__nav flex-row">
-        <li class="nav__li"><h4><a class="nav__li--link" href="">Twitter</a></h4></li>
-        <li class="nav__li"><h4><a class="nav__li--link" href="">Facebook</a></h4></li>
-        <li class="nav__li"><h4><a class="nav__li--link" href="">Instagram</a></h4></li>
+        <li class="nav__li"><h4><a class="nav__li--twitter" href="">Twitter</a></h4></li>
+        <li class="nav__li"><h4><a class="nav__li--facebook" href="">Facebook</a></h4></li>
+        <li class="nav__li"><h4><a class="nav__li--instagram" href="">Instagram</a></h4></li>
     </ul>
 </footer>
 

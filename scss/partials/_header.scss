@@ -1,4 +1,5 @@
 .header{ 
+  justify-content: space-between;
   font-family: $textLinks;
   margin-top: $spacing-md;
   background: map-get($colors, fourth); /*Hecho con mapa*/

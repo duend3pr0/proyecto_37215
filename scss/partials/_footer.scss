@@ -39,14 +39,14 @@
                   text-shadow: 2px 2px $third;
         &--twitter{ 
             @extend .nav__li;
-            color: blue;}
+            color: rgba(67, 207, 250, 0.825);}
             &--facebook {
                 @extend .nav__li;
-                color: red;
+                color: rgb(46, 76, 192);
             }
             &--instagram {
                 @extend .nav__li;
-                color: yellow;
+                color: rgb(234, 16, 103);
             }
 
                   
