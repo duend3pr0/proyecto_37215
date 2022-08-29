@@ -3,12 +3,12 @@
     flex-direction: column;
 }
 
-@mixin flex-row{
+@mixin flex-roww{
 	display:flex;
 	flex-direction:row;
 	}
-.flex-row {
-    @include flex-row;
+.flex-roww {
+    @include flex-roww;
 }
 
 
