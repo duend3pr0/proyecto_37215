@@ -296,6 +296,7 @@ body {
   100% {
     transform: rotatey(360deg); } }
 
+<<<<<<< HEAD
 @media (max-width: 599px) {
   .header {
     display: flex;
@@ -314,6 +315,23 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex: 1 1 250px; }
+=======
+@media (min-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    /*Hecho con mapa*/ }
+  .header__logo {
+    margin: 18px auto; }
+  .header__nav {
+    justify-content: center; }
+  .header__ul {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+    margin: 0; }
+>>>>>>> 9203da7854c7ab87966b994d239a7458d8297b31
   .header__link {
     font-size: 16px;
     padding: 0.5rem;
