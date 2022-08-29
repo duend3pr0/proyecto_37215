@@ -1,0 +1,43 @@
+#productos {
+
+}
+.productos {
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    
+    
+    & &__inodoro {
+color: blue($color: #000000);
+    }
+    & &__img{
+        border: 1px solid $third;
+        border-radius: 10px;
+
+    }
+    &__asiento {
+
+    }
+    & &__banera {
+        
+
+    }
+    & &__img{
+        height: 100%;
+        width: 50%;
+       
+
+
+    }
+    & &__nav{
+
+
+    }
+    & &__link{
+        color: $fourth;
+        &--title {
+            color: $primary;
+        }
+
+    }
+}

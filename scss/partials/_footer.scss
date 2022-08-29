@@ -1,0 +1,69 @@
+.footer {
+    font-family: $textLinks;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: $spacing-md;
+  background: $fourth;
+  border-bottom: 1px solid $fourth;
+&__datos {
+     flex-direction: column;
+     width: 50%;
+     font-size: $text-mid;
+     color: $secondary;
+     margin: $spacing-sm;
+     text-shadow: 2px 2px $third;
+     &--name {
+        font-size: $text-mid;
+
+     }
+    &--cuit {
+        font-size: ($text-mid*0.75);
+
+    }
+    &--adress {
+        font-size: ($text-mid*0.75);
+       
+    }
+ }
+
+    &__nav {
+        align-items: flex-end;
+        
+    & .nav__li {
+        padding: 1rem;
+                  font-size: $text-mid;
+                  font-weight: 500;
+                  transition: all .3s;
+                  text-shadow: 2px 2px $third;
+        &--twitter{ 
+            @extend .nav__li;
+            color: blue;}
+            &--facebook {
+                @extend .nav__li;
+                color: red;
+            }
+            &--instagram {
+                @extend .nav__li;
+                color: yellow;
+            }
+
+                  
+            &:hover{
+                background: linear-gradient(to right, $secondary), $fourth;
+                font-family: $textLinks;
+                color: $third;
+                font-weight: 800;
+                border: 3px solid $secondary;
+                text-shadow: 2px 2px $secondary;
+            
+            }
+        }
+        
+    }
+}
+
+
+    
+

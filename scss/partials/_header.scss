@@ -1,0 +1,44 @@
+.header{ 
+  font-family: $textLinks;
+  margin-top: $spacing-md;
+  background: map-get($colors, fourth); /*Hecho con mapa*/
+  border-bottom: 1px solid map-get($colors, fourth);
+  &__logo{
+      display: block;
+      max-width: 150px;
+      min-width: 120px;
+      margin: $spacing-sm;
+      ;
+      }
+  &__nav{        
+  justify-content: space-between;
+   margin-right: map-get($spacings, md); /*map get*/
+  }
+      &__ul{
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              flex: 1 1 250px; }
+
+              &__link {
+                  color: $secondary;    
+                  padding: 1rem;
+                  font-size: map-get($font-sizes, mid );
+                  font-weight: 500;
+                  transition: all .3s;
+                  text-shadow: 2px 2px map-get($colors , third);
+                  &:hover {
+                  background: linear-gradient(to right, $secondary), $fourth;
+                  font-family: $textLinks;
+                  color: map-get($colors, secondary);
+                  font-weight: 800;
+                  border: 3px solid map-get($colors, secondary);
+                  // text-shadow: 2px 2px $secondary;
+
+                  }
+                }
+                 &__link--active{
+                  border: 2px solid $primary;
+                }}
+          
+         
