@@ -1,7 +1,7 @@
 {
   "name": "ojh.pablovera",
   "version": "1.0.0",
-  "description": "## Este proyecto fue subido a través de git y github",
+  "description": "## sitio web para la venta de loza sanitaria ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/duend3pr0/proyecto_37215#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "bootstrap": "5.2.0"
   },
   "dependencies": {
     "abbrev": "^1.1.1",
