@@ -72,8 +72,8 @@ a {
     .header__ul--li {
       color: inherit; }
   .header__link {
-    color: #FFFAFA;
-    padding: 1rem;
+    padding: 0 1rem;
+    color: #36A2F0;
     font-size: 20px;
     font-weight: 500;
     transition: all .3s; }
@@ -87,15 +87,12 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 36px;
-  background: #36A2F0;
   border-bottom: 1px solid #36A2F0; }
   .footer__datos {
     flex-direction: column;
     width: 50%;
     font-size: 20px;
-    color: #FFFAFA;
-    margin: 24px;
-    text-shadow: 2px 2px #2D2B2B; }
+    color: #2D2B2B; }
     .footer__datos--name {
       font-size: 20px; }
     .footer__datos--cuit {
@@ -103,13 +100,12 @@ a {
     .footer__datos--adress {
       font-size: 15px; }
   .footer__nav {
-    align-items: flex-end; }
+    flex-direction: column; }
     .footer__nav .nav__li, .footer__nav .nav__li--twitter, .footer__nav .nav__li--facebook, .footer__nav .nav__li--instagram {
-      padding: 1rem;
+      padding: 0 1rem;
       font-size: 20px;
       font-weight: 500;
-      transition: all .3s;
-      text-shadow: 2px 2px #2D2B2B; }
+      transition: all .3s; }
       .footer__nav .nav__li--twitter {
         color: rgba(67, 207, 250, 0.825); }
       .footer__nav .nav__li--facebook {
@@ -121,11 +117,10 @@ a {
         font-family: "Roboto Slab", serif;
         color: #2D2B2B;
         font-weight: 800;
-        border: 3px solid #FFFAFA;
-        text-shadow: 2px 2px #FFFAFA; }
+        border: 3px solid #FFFAFA; }
 
 body {
-  background: #ebe9e5; }
+  background: #FFFAFA; }
 
 .home {
   display: flex;
@@ -143,12 +138,12 @@ body {
     font-size: 500;
     color: #1871D9;
     margin-bottom: 36px;
-    animation: rotate infinite ease-in-out 8s 3s; }
+    position: relative;
+    animation: move 1 ease-in-out 0.3s 1s; }
   .home__slogan {
     display: block;
     font-size: 48px;
     color: #FFFAFA;
-    text-shadow: 2px 2px #2D2B2B;
     font-size: 36px;
     color: #36A2F0; }
 
@@ -159,9 +154,8 @@ body {
   grid-template-rows: repeat(4, 1fr);
   gap: 36px; }
   .publicity__text {
-    grid-row: span 3/5;
+    grid-row: span 6;
     grid-column: 2/6;
-    text-shadow: 2px 2px #2D2B2B;
     transform: rotate(357deg);
     color: #FFFAFA;
     /* transform: skewy(45deg); */ }
@@ -185,6 +179,10 @@ body {
       width: 105%;
       transition: all 1s; }
 
+.lista__slogan {
+  text-align: center;
+  color: #1871D9; }
+
 #listas-de-productos {
   margin-top: 36px;
   font-size: 20px;
@@ -194,22 +192,22 @@ body {
 .lista__ul {
   flex-direction: column;
   border: 2px groove #1871D9;
-  border-radius: 15px;
-  background-color: #FFFAFA; }
+  border-radius: 10%;
+  width: 200px;
+  height: 200px; }
   .lista__ul:hover {
     translate: 25px, 25px; }
   .lista__ul--title {
-    color: #1871D9;
-    text-shadow: 2px #2D2B2B; }
+    color: #36A2F0; }
 
 .lista__item {
-  margin: 24px 24px;
-  color: #FFFAFA; }
+  color: #2D2B2B;
+  margin-bottom: 1rem; }
 
 .lista__link {
-  color: #36A2F0;
+  color: #2D2B2B;
   text-shadow: 2px #2D2B2B;
-  padding: 1rem;
+  padding: 0 0.5rem;
   font-size: 20px;
   font-weight: 500;
   transition: all .3s; }
@@ -236,11 +234,17 @@ body {
     .productos .productos__link--title {
       color: #1871D9; }
 
+.carrousel__img {
+  border: 2px solid #2D2B2B; }
+
 .carrousel__text {
   margin-top: 48px;
   text-align: center;
   color: #2D2B2B;
-  font-size: 48px; }
+  font-size: 48px;
+  margin-bottom: 2rem; }
+  .carrousel__text--description {
+    text-align: center; }
 
 .form {
   justify-content: center;
@@ -257,36 +261,28 @@ body {
   font-size: 20px;
   color: #2D2B2B; }
 
-.logo {
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-  .logo__img {
-    width: 60%;
-    height: 40%; }
-
 .logo__text {
   margin-top: 48px;
   align-items: center;
   justify-content: center;
   color: #FFFAFA;
-  border: 4px solid #36A2F0;
-  border-radius: 20px;
   background-color: #FFFAFA; }
   .logo__text--title {
     color: #1871D9; }
   .logo__text--description {
     color: #36A2F0; }
 
-@keyframes rotate {
+@keyframes move {
+  0% {
+    left: 0; }
   25% {
-    transform: rotatey(90deg); }
+    left: -300px; }
   50% {
-    transform: rotatey(180deg); }
+    left: 0; }
   75% {
-    transform: rotatey(270deg); }
+    left: 300px; }
   100% {
-    transform: rotatey(360deg); } }
+    left: 0; } }
 
 @media (max-width: 599px) {
   .header {

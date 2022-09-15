@@ -3,7 +3,7 @@
   padding: $spacing-sm $spacing-sm;
   font-family: $textLinks;
   border-bottom: 1px solid map-get($colors, fourth);
-    &__logo{
+ &__logo{
       display: block;
       max-width: 150px;
       min-width: 120px;
@@ -27,9 +27,8 @@
               
        
               &__link {
-                
-                  color: $secondary;    
-                  padding: 1rem;
+                  padding: 0 1rem;
+                  color: map-get($colors , fourth);    
                   font-size: map-get($font-sizes, mid );
                   font-weight: 500;
                   transition: all .3s;

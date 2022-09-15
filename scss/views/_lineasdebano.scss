@@ -1,9 +1,14 @@
-#lineasdebano {
 
+.carrousel__img {
+    border: 2px solid map-get($colors, third );
 }
 .carrousel__text {
     margin-top: $spacing-lg;
     text-align: center;
     color: $third;
     font-size: $text-xl;
+    margin-bottom: 2rem;
+    &--description {
+    text-align: center;
+    }
 }
