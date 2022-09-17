@@ -1,6 +1,7 @@
-@keyframes rotate{
-    25% {transform: rotatey(90deg);}
-    50% {transform: rotatey(180deg);}
-    75% {transform: rotatey(270deg);}
-    100% {transform: rotatey(360deg);}
+@keyframes move{
+    0% {left: 0;}
+    25% {left: -300px;}
+    50% {left: 0;}
+    75% {left: 300px;}
+    100% {left: 0;}
 }

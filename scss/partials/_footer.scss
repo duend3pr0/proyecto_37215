@@ -5,15 +5,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: $spacing-md;
-  background: $fourth;
   border-bottom: 1px solid $fourth;
 &__datos {
      flex-direction: column;
      width: 50%;
      font-size: $text-mid;
-     color: $secondary;
-     margin: $spacing-sm;
-     text-shadow: 2px 2px $third;
+     color: map-get($colors, third );
      &--name {
         font-size: $text-mid;
 
@@ -29,14 +26,12 @@
  }
 
     &__nav {
-        align-items: flex-end;
-        
+flex-direction: column;        
     & .nav__li {
-        padding: 1rem;
+        padding: 0 1rem;
                   font-size: $text-mid;
                   font-weight: 500;
                   transition: all .3s;
-                  text-shadow: 2px 2px $third;
         &--twitter{ 
             @extend .nav__li;
             color: rgba(67, 207, 250, 0.825);}
@@ -56,7 +51,6 @@
                 color: $third;
                 font-weight: 800;
                 border: 3px solid $secondary;
-                text-shadow: 2px 2px $secondary;
             
             }
         }

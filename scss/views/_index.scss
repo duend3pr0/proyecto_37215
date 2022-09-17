@@ -1,5 +1,5 @@
 body{
-    background: rgb(207, 198, 181);
+    background: map-get($colors, secondary);
 }
 .home {
     display: flex;
@@ -15,14 +15,14 @@ body{
     font-size: 500;
     color: $primary;
     margin-bottom: $spacing-md;
-    animation: rotate infinite ease-in-out 8s 3s;
+    position: relative;
+    animation: move 1 ease-in-out 0.3s 1s;
     
 }
 &__slogan {
     display: block;
     font-size: $text-xl;
     color: $secondary;
-    text-shadow: 2px 2px $third;
     font-size: ($text-xl*0.75);
     color: $fourth;
    
@@ -36,16 +36,15 @@ body{
     gap: $spacing-md;
 
 &__text {
-    grid-row: span 3/5;
+    grid-row: span 6;
     grid-column: 2/6;
-    text-shadow: 2px 2px $third;
     transform: rotate(357deg);
     color: $secondary;
     /* transform: skewy(45deg); */
 
 &--title {
    
-    color: $primary;
+    color: map-get($colors ,primary );
     font-size: $text-xl;
 
 }
@@ -53,7 +52,7 @@ body{
 &-description {
      font-size: $text-lg;
         margin: $spacing-lg auto;
-        color: $fourth;
+        color: map-get($colors, fourth );
 
 }
 }
@@ -75,7 +74,11 @@ body{
     width: 105%;
     transition: all 1s;
 }}}
-
+.lista__slogan {
+    text-align: center;
+    color: map-get($colors, primary );
+    
+}
 #listas-de-productos {
     margin-top: $spacing-md;
     font-size: $text-mid;
@@ -86,8 +89,10 @@ body{
 &__ul {
     flex-direction: column;
     border: 2px groove $primary;
-    border-radius: 15px;
-    background-color: $secondary;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    
     
     &:hover {
         translate: (25px,25px );
@@ -95,19 +100,18 @@ body{
 
     &--title {
         // margin: $spacing--lg;
-        color: $primary;
-        text-shadow: 2px $third;
+        color:map-get($colors , fourth );
     }
 }
 &__item {
-    margin: $spacing-sm $spacing-sm;
-    color: $secondary;  
+    color: map-get($colors, third ); 
+    margin-bottom: 1rem; 
     }
 
     &__link {
-        color: $fourth;
+        color: map-get($colors, third );
         text-shadow: 2px $third;    
-        padding: 1rem;
+        padding: 0 0.5rem;
         font-size: $text-mid;
         font-weight: 500;
         transition: all .3s;
