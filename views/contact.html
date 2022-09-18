@@ -41,62 +41,63 @@
 <section id="contact">
     <article>
         <form class="form flex-column">
-            <div class=" mb-3 form__datos">
-            <label class="flex-roww jc-center form__datos--name" for="text">Nombre</label>
-            <input class="form-control" type="text" name="nombre" required>
-        </div>
-            <div class="mb-3 form__datos">
-            <label class="flex-roww jc-center form__datos--lastname" for="text">Apellido</label>
-            
-            <input class="form-control" type="text"  name="apellido" id="" required>
-        </div>
-            <div class="mb-3  form__datos">
-            <label class="flex-roww jc-center form__datos--email" for="email">E-mail</label>
-           
-            <input class="form-control" type="email"  name="email"required>
-        </div>
-            <div class="mb-3 form__datos">
-            <label class="flex-roww jc-center form__datos--age" for="number">Edad</label>
-            <input class="form-control" type="number"  required min="1" max="99">
-        </div>
-            <p class="form__label">Sexo:</p>
+            <div class="  form__datos jc-center flex-roww">
+            <label class="form__label" for="text">Nombre:</label>
+            <input class="form__input form__input--name" type="text" name="nombre" required>
+             </div>
 
-            <section>
-            
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+            <div class="form__datos jc-center flex-roww">
+            <label class="form__label" for="text">Apellido:</label>    
+            <input class="form__input form__input--lastname" type="text"  name="apellido" id="" required>
+            </div>
+
+            <div class="form__datos jc-center flex-roww">
+            <label class="form__label" for="email">E-mail:</label>    
+            <input class="form__input form__input--email" type="email"  name="email"required>
+            </div>
+
+            <div class="form__datos jc-center flex-roww">
+            <label class="form__label" for="number">Edad:</label>
+            <input class="form__input form__input--age jc-center" type="number"  required min="1" max="99">
+            </div>
+
+            <p class="form__label">Sexo:</p>
+            <section class="form__choice flex-roww">   
+                         
+                <div class="">                    
+                    <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="" for="flexRadioDefault1">
                       Masculino
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                  <div class="">
+                    <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="" for="flexRadioDefault2">
                     Femenino
                     </label>
                 </div>   
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                    <div class="">
+                        <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="" for="flexRadioDefault1">
                           Otro
                         </label>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                      <div class="">
+                        <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="" for="flexRadioDefault1">
                           Prefiero no decirlo
                         </label>
                       </div>
                              
         </div>
         </section>
-        <div class="mb-3">
-            <label for="textarea" class="form-label">Dejanos tus comentarios.</label>
-        <textarea class="form-control" id="textarea" name="comentarios" rows="4" cols="50"></textarea>
+        <div class="">
+            <label for="textarea" class="">Dejanos tus comentarios.</label>
+        <textarea class="" id="textarea" name="comentarios" rows="4" cols="50"></textarea>
     </div>
     <div>
-        <input class="btn btn-outline-secondary" type="submit" value="Enviar">
-        <input class="btn btn-outline-secondary" type="reset" value="Borrar">
+        <input class="" type="submit" value="Enviar">
+        <input class="" type="reset" value="Borrar">
     </div>
         </form>
     </article>

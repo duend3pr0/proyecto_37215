@@ -1,6 +1,8 @@
 body{
+    height: 100vh;
     background: map-get($colors, secondary);
-}
+    
+
 .home {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,7 @@ body{
     color: $primary;
     flex-wrap: wrap;
     margin:  $spacing-lg 0;
+  
     &__title {
     @include title ($text-base,$text-xxl); /*mixin aplicado*/
     display: block;    
@@ -84,14 +87,15 @@ body{
     font-size: $text-mid;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 50%;
      }
 .lista {
+    height: 50%;
+    
 &__ul {
     flex-direction: column;
-    border: 2px groove $primary;
-    border-radius: 10%;
     width: 200px;
-    height: 200px;
+    
     
     
     &:hover {
@@ -112,8 +116,8 @@ body{
         color: map-get($colors, third );
         text-shadow: 2px $third;    
         padding: 0 0.5rem;
-        font-size: $text-mid;
+        font-size: $text-lg;
         font-weight: 500;
         transition: all .3s;
-    }  
-}
+        }  
+}}

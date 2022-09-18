@@ -15,12 +15,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/logoparahtml.png" type="image/x-icon">
 </head>
-<body class="container">
-    <main>
+<body>
+    <main class="container">
         <!-- clases flex-roww helper creada con mixin, con 2 "w" para diferenciarla de la clase de bootstrap" -->
-    <header id="header" class="header flex-roww jc-spacebetween wrap">
+    <header id="header" class="container header flex-roww jc-spacebetween wrap">
             <a class="header__logo" href="./index.html"><img src="./img/logoparahtml.png" alt=""></a>
-		
 		<nav class="header__nav flex-roww">
 			<ul class="header__nav wrap header__ul flex-roww">
                 <li class="header__ul--li">
@@ -34,14 +33,16 @@
             </ul>
 		</nav>
 	</header>
+
    
-    <section id="home" class="home">
+    <section id="home" class=" cointainer home">
+
     <h1 class="home__title">SANITARIOS OJH</h2>
     <H2 class="home__slogan">El diseño que estás buscando</H3>
 
     </section>
 
-    <section id="publicity" class="publicity flex-roww">
+    <section id="publicity" class="container publicity flex-roww">
         <article class="
         
         publicity__text">
@@ -55,9 +56,9 @@
 
         <iframe class="publicity__video " src="https://www.youtube.com/embed/fhF0DRCQqRw" title="iBath XP101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    <h2 class="lista__slogan">Te presentemos nuestras lineas de diseño</h2>
+    <h2 class="container lista__slogan">Te presentemos nuestras lineas de diseño</h2>
 
-    <section id="listas-de-productos" class="flex-roww">
+    <section id="listas-de-productos" class="container flex-roww">
         <article class="lista flex-roww">
     
     
@@ -87,7 +88,7 @@
             <li class="lista__item"><a class="lista__link" href="">Asientos</a></li>
         </ul>
         </article>
-    <article class="lista">    
+    <article class=" lista">    
         <ul class="lista__ul">
             <li> <a class="lista__ul--title" href="./views/lineasdebano.html">Hall</a></li>
             <li class="lista__item"><a class="lista__link" href="">Inodoros</a></li>
@@ -99,7 +100,7 @@
         </section>
 
 
-    <footer class="flex-roww footer">
+    <footer class="container flex-roww footer">
         <div class="footer__datos">
         <h3 class="footer__datos--name">OJH SANITARIOS</h3>
         <h4 class="footer__datos--cuit">30-0303456-5</h4>
