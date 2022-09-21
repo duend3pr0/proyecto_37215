@@ -41,7 +41,24 @@
 <section id="contact">
     <article>
         <form class="form flex-column">
-            <div class="  form__datos jc-center flex-roww">
+            <div class="form__container input-group input-group-lg mb-4">
+                <span class="form__label input-group-text" id="inputGroup-sizing-lg">Nombre</span>
+                <input type="text" class="form-control form__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+
+              <div class="input-group input-group-lg mb-4">
+                <span class="form__label input-group-text" id="inputGroup-sizing-lg">Apellido</span>
+                <input type="text" class=" form-control form__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+
+              <div class="input-group input-group-lg mb-4">
+                <span class="form__label input-group-text" id="inputGroup-sizing-lg">E-mail</span>
+                <input type="email" class=" form-control form__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+                   <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tus comentarios"></textarea>
+                  </div>
+            <!-- <div class="  form__datos jc-center flex-roww">
             <label class="form__label" for="text">Nombre:</label>
             <input class="form__input form__input--name" type="text" name="nombre" required>
              </div>
@@ -61,37 +78,36 @@
             <input class="form__input form__input--age jc-center" type="number"  required min="1" max="99">
             </div>
 
-            <p class="form__label">Sexo:</p>
-            <section class="form__choice flex-roww">   
-                         
-                <div class="">                    
-                    <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="" for="flexRadioDefault1">
+            <section class="form__choice flex-roww"> 
+                <div class="form__datos">
+                    <p class="form__label">Sexo:</p>                      
+                    <input class="form__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form__label" for="flexRadioDefault1">
                       Masculino
                     </label>
                   </div>
-                  <div class="">
-                    <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="" for="flexRadioDefault2">
+                  <div class="form__datos">
+                    <input class="form__input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form__label" for="flexRadioDefault2">
                     Femenino
                     </label>
                 </div>   
-                    <div class="">
-                        <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="" for="flexRadioDefault1">
+                    <div class="form__datos">
+                        <input class="form__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form__label" for="flexRadioDefault1">
                           Otro
                         </label>
                       </div>
-                      <div class="">
-                        <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="" for="flexRadioDefault1">
+                      <div class="form__datos">
+                        <input class="form__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form__label" for="flexRadioDefault1">
                           Prefiero no decirlo
                         </label>
                       </div>
                              
         </div>
         </section>
-        <div class="">
+        <div class="comentaryBox">
             <label for="textarea" class="">Dejanos tus comentarios.</label>
         <textarea class="" id="textarea" name="comentarios" rows="4" cols="50"></textarea>
     </div>
@@ -100,7 +116,7 @@
         <input class="" type="reset" value="Borrar">
     </div>
         </form>
-    </article>
+    </article> -->
 </section>
     
     

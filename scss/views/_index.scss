@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     background: map-get($colors, secondary);
-    
+}    
 
 .home {
     display: flex;
@@ -11,12 +11,22 @@ body{
     color: $primary;
     flex-wrap: wrap;
     margin:  $spacing-lg 0;
+    position: relative;
+    // height: 60vh;
+    &__img {
+        height: 100%;
+    }
+
+    &__text {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
   
     &__title {
     @include title ($text-base,$text-xxl); /*mixin aplicado*/
-    display: block;    
-    font-size: 500;
-    color: $primary;
+    display: block;
+    color: $third;
     margin-bottom: $spacing-md;
     position: relative;
     animation: move 1 ease-in-out 0.3s 1s;
@@ -27,9 +37,7 @@ body{
     font-size: $text-xl;
     color: $secondary;
     font-size: ($text-xl*0.75);
-    color: $fourth;
-   
-}
+    }
 }
 .publicity {
     height: 60vh;
@@ -82,42 +90,40 @@ body{
     color: map-get($colors, primary );
     
 }
-#listas-de-productos {
-    margin-top: $spacing-md;
-    font-size: $text-mid;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 50%;
-     }
-.lista {
-    height: 50%;
-    
-&__ul {
-    flex-direction: column;
-    width: 200px;
-    
-    
-    
-    &:hover {
-        translate: (25px,25px );
-    }
 
-    &--title {
-        // margin: $spacing--lg;
-        color:map-get($colors , fourth );
-    }
+.cardss {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1 px solid black;
+    column-gap: 2rem;
+    
 }
-&__item {
-    color: map-get($colors, third ); 
-    margin-bottom: 1rem; 
-    }
-
-    &__link {
-        color: map-get($colors, third );
-        text-shadow: 2px $third;    
-        padding: 0 0.5rem;
-        font-size: $text-lg;
-        font-weight: 500;
-        transition: all .3s;
-        }  
-}}
+.cardd {
+    margin-bottom: 1rem;
+}
+.cardd__tittle {
+    margin-bottom: 2rem;
+    font-size: $text-xl;
+}
+.cardd__img {
+    border: 1px solid black;
+    height: 50%;
+}
+.cardd__link {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+}
+.cardd__text {
+    font-size: $text-mid;
+    color: map-get($colors,third );
+    padding: 2rem 0;
+}

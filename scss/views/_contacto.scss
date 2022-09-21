@@ -1,29 +1,32 @@
 .form {
     justify-content: center;
     flex-direction: column;
-    margin: $spacing-lg;
+    margin: $spacing-lg ;
+    
     }
-
+#contact {
+    background-color: map-get($colors, secondary);
+}
 
 .form__datos {
    font-size: $text-mid;
     color: $third;
     height: 2rem;
     margin-top: 2rem;
-    width: 100%;
+    
     
 }
 .form__label {
-    width: 20%;
+    
     justify-content: end;
+    color: map-get($colors, fourth);
+    &--email {
+    
+    }
     
 }
 .form__input {
-    font-size: $text-mid;
-    width: 70%;
-    color: map-get($colors, secondary);
-    background-color: map-get($colors, fourth );
-    border-radius: 30px;
-    &--age {
-
-    }}
+       }
+    .form__choice {
+        justify-content: space-around;
+    }

@@ -1,16 +1,21 @@
+.home--about {
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+}
+.home__slogan {
+    
+    color: map-get($colors,fourth )
+   }
 
-.logo__text {
-    margin-top: $spacing-lg;
-    align-items: center;
-    justify-content: center;
-    color: $secondary;
-    background-color: $secondary;
-    &--title{
-        color: $primary;
-
-    }
-    &--description{
-    color: $fourth;
-
-    }
+   .home__img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+.home__span {
+    font-size: 1rem;
+    color: red;
 }

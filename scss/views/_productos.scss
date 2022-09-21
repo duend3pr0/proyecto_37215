@@ -5,12 +5,15 @@
     justify-content: center;
     align-items: center;
     margin-bottom: $spacing-md;
+    height: 25vh;
+    width: 80%;
+    flex: 1 1 200px;
     
     
-    & &__inodoro {
+    &__inodoro {
 color: blue($color: #000000);
     }
-    & &__img{
+    &__img{
         border: 1px solid $third;
         border-radius: 10px;
 
@@ -18,26 +21,29 @@ color: blue($color: #000000);
     &__asiento {
 
     }
-    & &__banera {
+    &__banera {
         
 
     }
-    & &__img{
+    &__img{
         height: 100%;
         width: 50%;
        
 
 
     }
-    & &__nav{
+    &__nav{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         flex-wrap: wrap;
         flex: 1 1 300px;
-
-
+        &--derecha {
+          align-items: flex-end;
+          margin: 0 1rem;
+        }
     }
-    & &__link{
+    &__link{
         color: $fourth;
         &--title {
             color: $primary;
