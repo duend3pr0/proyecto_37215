@@ -3,7 +3,7 @@ body{
     background: map-get($colors, secondary);
 }    
 
-.home {
+.home__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,117 +13,21 @@ body{
     margin:  $spacing-lg 0;
     position: relative;
     // height: 60vh;
-    &__img {
-        height: 100%;
-    }
-
-    &__text {
-        position: absolute;
-        top: 35%;
-        left: 35%;
-    }
-  
-    &__title {
-    @include title ($text-base,$text-xxl); /*mixin aplicado*/
-    display: block;
-    color: $third;
-    margin-bottom: $spacing-md;
-    position: relative;
-    animation: move 1 ease-in-out 0.3s 1s;
-    
 }
-&__slogan {
-    display: block;
+  
+  
+    .home__title1 {
+    font-size: 48px;
+    
+    color: $third;
+    margin-bottom: $spacing-md;   
+    
+        }
+    .home__slogan {
+    
     font-size: $text-xl;
     color: $secondary;
     font-size: ($text-xl*0.75);
     }
-}
-.publicity {
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);
-    gap: $spacing-md;
-
-&__text {
-    grid-row: span 6;
-    grid-column: 2/6;
-    transform: rotate(357deg);
-    color: $secondary;
-    /* transform: skewy(45deg); */
-
-&--title {
-   
-    color: map-get($colors ,primary );
-    font-size: $text-xl;
-
-}
-
-&-description {
-     font-size: $text-lg;
-        margin: $spacing-lg auto;
-        color: map-get($colors, fourth );
-
-}
-}
-
-&__video {
-       grid-column: 7/12;
-    
-    grid-row: span 4;
-    height: 100%;
-    width: 100%;
-    border: 2px double $primary;
-    padding: $spacing-lg auto;
 
 
-    /* transform: rotate(3deg);        */
-
-&:hover{
-    height: 105%;
-    width: 105%;
-    transition: all 1s;
-}}}
-.lista__slogan {
-    text-align: center;
-    color: map-get($colors, primary );
-    
-}
-
-.cardss {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1 px solid black;
-    column-gap: 2rem;
-    
-}
-.cardd {
-    margin-bottom: 1rem;
-}
-.cardd__tittle {
-    margin-bottom: 2rem;
-    font-size: $text-xl;
-}
-.cardd__img {
-    border: 1px solid black;
-    height: 50%;
-}
-.cardd__link {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-  
-}
-.cardd__text {
-    font-size: $text-mid;
-    color: map-get($colors,third );
-    padding: 2rem 0;
-}

@@ -21,7 +21,7 @@
     <header id="header" class="container header flex-roww jc-spacebetween wrap">
             <a class="header__logo" href="./index.html"><img src="./img/logoparahtml.png" alt=""></a>
 		<nav class="header__nav flex-roww">
-			<ul class="header__nav wrap header__ul flex-roww">
+			<ul class="header__nav wrap header__ul flex-roww wrap">
                 <li class="header__ul--li">
                     <a class="header__link  header__link-active" href="./views/productos.html">Productos</a></li>
                 <li class="header__ul--li">
@@ -36,58 +36,38 @@
     
 
    
-    <section id="home" class=" cointainer home">
-    <img class="home__img" src="./img/views/index/main.jpg" alt="baño de diseño">
-    <div class="home__text">
-        <h1 class="home__title">SANITARIOS OJH</h2>
+    
+    <div class="container home__text">
+        <h1 class="home__title1">SANITARIOS OJH</h2>
         <H2 class="home__slogan">El diseño que estás buscando</H3>
     </div>
-    
 
-    </section>
-
-    <section id="publicity" class="container publicity flex-roww">
-        <article class="
-        
-        publicity__text">
-            <h1 class="
-            
-            publicity__text--title">I-BATH</h1>
-            <h2 class="
-            
-            publicity__text-description">Te presentabamos I-BATH, el inodoro del futuro.</H2>   
-        </article>
-
-        <iframe class="publicity__video " src="https://www.youtube.com/embed/fhF0DRCQqRw" title="iBath XP101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <div class="container cardss">
-        <article class="cardd">
-            <h1 class="cardd__tittle" >Inodoros y bidets</h1>
-            <img class="cardd__img" src="./img/views/index/thegap.jpg">
-            <p class="cardd__text">Conocé nuestras líneas de diseño</p>
-            <a class="cardd__link" href="#">Leer más</a>
-        </article>
-        <article class="cardd">
-            <h1 class="cardd__tittle" >Bachas y lavatorios</h1>
-            <img class="cardd__img" src="./img/views/index/bachasylavatorios.jpg">
-            <p class="cardd__text">Conocé nuestras líneas de diseño</p>
-            <a class="cardd__link" href="#">Leer más</a>
-        </article>
-        <article class="cardd">
-            <h1 class="cardd__tittle" >Bañeras</h1>
-            <img class="cardd__img" src="./img/views/index/banera.jpg">
-            <p class="cardd__text">Conocé nuestras líneas de diseño</p>
-            <a class="cardd__link" href="#">Leer más</a>
-        </article>
-        <article class="cardd">
-            <h1 class="cardd__tittle" >Hidromasajes</h1>
-            <img class="cardd__img" src="./img/views/index/hidromasajes.jpg">
-            <p class="cardd__text">Conocé nuestras líneas de diseño</p>
-            <a class="cardd__link" href="#">Leer más</a>
-        </article>
-        
+    <div id="ofertas">
+        <!-- <h2>INODOROS EN OFERTA</h2>
+        <div class="card" style="width: 18rem;" id="oferta">
+            <img src="..." class="card-img-top" alt="..." id="ofertaImg">
+            <div class="card-body" id="cardBody">
+              <h5 class="card-title" id="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+       
     </div>
 
+
+
+    
+    <!-- Lugar reservado para las cards con js -->
+   <div class="card" style="width: 18rem;" id="productos">
+    <h2>NUESTROS PRODUCTOS</h2>
+        <!-- <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
 
     <footer class="container flex-roww footer">
         <div class="footer__datos">
@@ -105,4 +85,7 @@
     </body>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./js/Productos.js"></script>
+    <script src="./js/GestionarProductos.js"></script>
+    <script src="./js/index.js"></script>
 </html>
