@@ -143,6 +143,10 @@ body {
   color: #FFFAFA;
   font-size: 36px; }
 
+.card-imgg {
+  width: 150px;
+  height: 150px; }
+
 .productos {
   justify-content: center;
   align-items: center;

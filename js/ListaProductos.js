@@ -1,81 +1,204 @@
 
-
-
-class ListaProductos {
+class GestionarProductos {
 
     iniciar() {
 
         //Arreglo de productos
-        productos = [
+        inodoros = [
 
             {
                 "id": 1,
-                "nombre": "Inodoro Largo Marina",
+                "nombre": "Marina",                
                 "descripcion": "Inodoro de apoyo Marina blanco Ferrum",
-                "precio": 20000,
-                "stock": 10,
-                "img": "",
-                "destacado": 0
+                "precio": 8000,
+                "stock": 30,
+                "img": "marina.jpg",
+                "tipo": "inodoro"
             },
             {
                 "id": 2,
-                "nombre": "Inodoro Largo Murano",
-                "descripcion": "Inodoro de apoyo Murano blanco Ferrum",
-                "precio": 18000,
-                "stock": 10,
-                "img": "",
-                "destacado": 0
-            },
+                "nombre": "Bari",
+                
+                "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "bari.jpg,",
+                 "tipo": "inodoro",          
+                 },
 
             {
                 "id": 3,
-                "nombre": "Inodoro Largo Atuel",
-                "descripcion": "Inodoro de apoyo Atuel blanco Ferrum",
+                "nombre": "Andina",
+                
+                "descripcion": "Inodoro de apoyo Andina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "",
-                "destacado": 1
-            },
+                "img": "andina.jpg",
+                "tipo": "inodoro",
+             },
             {
                 "id": 4,
-                "nombre": "Inodoro Largo Andina",
-                "descripcion": "Inodoro de apoyo Andina blanco Ferrum",
+                "nombre": "Trento",
+                
+                "descripcion": "Inodoro de apoyo Trento blanco Ferrum",
                 "precio": 9000,
                 "stock": 30,
-                "img": "",
-                "destacado": 1
+                "img": "trento.jpg",
+                "tipo": "inodoro",
+                
             },
             {
                 "id": 5,
-                "nombre": "Inodoro Largo Trento",
-                "descripcion": "Inodoro de apoyo Trento blanco Ferrum",
+                "nombre": "Varese",
+                
+                "descripcion": "Inodoro de apoyo Varese blanco Ferrum",
                 "precio": 14000,
                 "stock": 10,
-                "img": "",
-                "destacado": 0
+                "img": "varese.jpg",
+                "tipo": "inodoro",
+                
             },
             {
                 "id": 6,
-                "nombre": "Inodoro Largo Varese",
-                "descripcion": "Inodoro de apoyo Varese blanco Ferrum",
-                "precio": 25000,
-                "stock": 5,
-                "img": "",
-                "destacado": 0
-            }
+                "nombre": "Veneto",
+                
+                "descripcion": "Inodoro de apoyo Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                "tipo": "inodoro",
+            },          
         ]
 
-        // Solo quiero mostrar los articulos destacados.
-        let ofertas = productos.filter( prod => prod.destacado == 1 );
-
-        this.cargarProductos( ofertas);
-        
-        this.mostrarCarrito();
-        
-        this.actualizarContador();
+        bidets = [
             
+            {
+                "id": 7,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                  "tipo": "bidet"
+            },
+            {
+                "id": 8,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                  "tipo": "bidet"
+            },
+            {
+                "id": 9,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                  "tipo": "bidet"
+            },
+            {
+                "id": 10,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                "tipo": "bidet"
+            },
+            {
+                "id": 11,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                  "tipo": "bidet"
+            },
+            {
+                "id": 12,
+                "nombre": "Veneto",
+              
+                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                "tipo": "bidet"
+            },
+
+        ]
+
+        depositos = [
+
+            {
+                "id": 1,
+                "nombre": "Marina",                
+                "descripcion": "Depósito de apoyo Marina blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "marina.jpg",
+                "tipo": "depósito"
+            },
+            {
+                "id": 2,
+                "nombre": "Bari",
+                
+                "descripcion": "Depósito de apoyo Bari blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "bari.jpg,",
+                 "tipo": "depósito",          
+                 },
+
+            {
+                "id": 3,
+                "nombre": "Andina",
+                
+                "descripcion": "Depósito de apoyo Andina blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "andina.jpg",
+                "tipo": "depósito",
+             },
+            {
+                "id": 4,
+                "nombre": "Trento",
+                
+                "descripcion": "Depósito de apoyo Trento blanco Ferrum",
+                "precio": 9000,
+                "stock": 30,
+                "img": "trento.jpg",
+                "tipo": "depósito",
+                
+            },
+            {
+                "id": 5,
+                "nombre": "Varese",
+                
+                "descripcion": "Depósito de apoyo Varese blanco Ferrum",
+                "precio": 14000,
+                "stock": 10,
+                "img": "varese.jpg",
+                "tipo": "depósito",
+                
+            },
+            {
+                "id": 6,
+                "nombre": "Veneto",
+                
+                "descripcion": "Depósito de apoyo Veneto blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "veneto.jpg",
+                "tipo": "depósito",
+            },
+          ]
     }
 }
-
-
-    
