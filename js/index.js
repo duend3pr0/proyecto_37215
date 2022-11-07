@@ -1,138 +1,26 @@
 
 
-
 // Variables Globales
-let carrito       = [];
-let productos     = [{
-    "id": 1,
-    "nombre": "Marina",                
-    "descripcion": "Inodoro de apoyo Marina blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "marina.jpg",
-    "tipo": "inodoro"
-},
-{
-    "id": 2,
-    "nombre": "Bari",
-    
-    "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "bari.jpg",
-     "tipo": "inodoro",          
-     },
+let carrito  = new Array();
+let productos = new Array();
 
-{
-    "id": 3,
-    "nombre": "Andina",
-    
-    "descripcion": "Inodoro de apoyo Andina blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "andina.jpg",
-    "tipo": "inodoro",
- },
-{
-    "id": 4,
-    "nombre": "Trento",
-    
-    "descripcion": "Inodoro de apoyo Trento blanco Ferrum",
-    "precio": 9000,
-    "stock": 30,
-    "img": "trento.jpg",
-    "tipo": "inodoro",
-    
-},
-{
-    "id": 5,
-    "nombre": "Varese",
-    
-    "descripcion": "Inodoro de apoyo Varese blanco Ferrum",
-    "precio": 14000,
-    "stock": 10,
-    "img": "varese.jpg",
-    "tipo": "inodoro",
-    
-},
-{
-    "id": 6,
-    "nombre": "Veneto",
-    
-    "descripcion": "Inodoro de apoyo Veneto blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "veneto.jpg",
-    "tipo": "inodoro",
-},
-{
-    "id": 7,
-    "nombre": "Marina",
-  
-    "descripcion": "Bidet 3 agujeros Marina blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "marina.jpg",
-      "tipo": "bidet"
-},
-{
-    "id": 8,
-    "nombre": "Bari",
-  
-    "descripcion": "Bidet 3 agujeros Bari blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "bari.jpg",
-      "tipo": "bidet"
-},
-{
-    "id": 9,
-    "nombre": "Andina",
-  
-    "descripcion": "Bidet 3 agujeros Andina blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "andina.jpg",
-      "tipo": "bidet"
-},
-{
-    "id": 10,
-    "nombre": "Trento",
-  
-    "descripcion": "Bidet 3 agujeros Trento blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "trento.jpg",
-    "tipo": "bidet"
-},
-{
-    "id": 11,
-    "nombre": "Varese",
-  
-    "descripcion": "Bidet 3 agujeros Varese blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "varese.jpg",
-      "tipo": "bidet"
-},
-{
-    "id": 12,
-    "nombre": "Veneto",
-  
-    "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
-    "precio": 8000,
-    "stock": 30,
-    "img": "veneto.jpg",
-    "tipo": "bidet"
-},
 
-];
-productos.length
+let ;
+
+
+
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded',() =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || [];        
-})
-}}
+
+});
+
 cargarProductos( productos ) { 
         
     const divProductos    = document.querySelector('#productos');
@@ -167,3 +55,5 @@ cargarProductos( productos ) {
 
 
         }
+
+    

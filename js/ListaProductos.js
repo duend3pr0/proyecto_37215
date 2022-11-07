@@ -4,7 +4,8 @@ class GestionarProductos {
     iniciar() {
 
         //Arreglo de productos
-        inodoros = [
+       
+       productos = [ inodoros = [
 
             {
                 "id": 1,
@@ -12,7 +13,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Marina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "marina.jpg",
+                "img": "inodmarina.jpg",
                 "tipo": "inodoro"
             },
             {
@@ -22,7 +23,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "bari.jpg,",
+                "img": "inodbari.jpg,",
                  "tipo": "inodoro",          
                  },
 
@@ -33,7 +34,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Andina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "andina.jpg",
+                "img": "inodandina.jpg",
                 "tipo": "inodoro",
              },
             {
@@ -43,7 +44,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Trento blanco Ferrum",
                 "precio": 9000,
                 "stock": 30,
-                "img": "trento.jpg",
+                "img": "inodtrento.jpg",
                 "tipo": "inodoro",
                 
             },
@@ -54,7 +55,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Varese blanco Ferrum",
                 "precio": 14000,
                 "stock": 10,
-                "img": "varese.jpg",
+                "img": "inodvarese.jpg",
                 "tipo": "inodoro",
                 
             },
@@ -65,140 +66,143 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Veneto blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "veneto.jpg",
+                "img": "inodveneto.jpg",
                 "tipo": "inodoro",
             },          
-        ]
+        ],
 
         bidets = [
             
             {
                 "id": 7,
-                "nombre": "Veneto",
-              
-                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "nombre": "Marina",                
+                "descripcion": "Bidet 3 agujeros Marina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "veneto.jpg",
-                  "tipo": "bidet"
-            },
-            {
-                "id": 8,
-                "nombre": "Veneto",
-              
-                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
-                "precio": 8000,
-                "stock": 30,
-                "img": "veneto.jpg",
-                  "tipo": "bidet"
-            },
-            {
-                "id": 9,
-                "nombre": "Veneto",
-              
-                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
-                "precio": 8000,
-                "stock": 30,
-                "img": "veneto.jpg",
-                  "tipo": "bidet"
-            },
-            {
-                "id": 10,
-                "nombre": "Veneto",
-              
-                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
-                "precio": 8000,
-                "stock": 30,
-                "img": "veneto.jpg",
+                "img": "bidmarina.jpg",
                 "tipo": "bidet"
             },
             {
-                "id": 11,
-                "nombre": "Veneto",
-              
-                "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
+                "id": 8,
+                "nombre": "Bari",
+                
+                "descripcion": "Bidet 3 agujeros Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "veneto.jpg",
-                  "tipo": "bidet"
+                "img": "bidbari.jpg,",
+                 "tipo": "bidet",          
+                 },
+
+            {
+                "id": 9,
+                "nombre": "Andina",
+                
+                "descripcion": "Bidet 3 agujeros Andina blanco Ferrum",
+                "precio": 8000,
+                "stock": 30,
+                "img": "bidandina.jpg",
+                "tipo": "bidet",
+             },
+            {
+                "id": 10,
+                "nombre": "Trento",
+                
+                "descripcion": "Bidet 3 agujeros Trento blanco Ferrum",
+                "precio": 9000,
+                "stock": 30,
+                "img": "bidtrento.jpg",
+                "tipo": "bidet",
+                
+            },
+            {
+                "id": 11,
+                "nombre": "Varese",
+                
+                "descripcion": "Bidet 3 agujeros Varese blanco Ferrum",
+                "precio": 14000,
+                "stock": 10,
+                "img": "bidvarese.jpg",
+                "tipo": "bidet",
+                
             },
             {
                 "id": 12,
                 "nombre": "Veneto",
-              
+                
                 "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "veneto.jpg",
-                "tipo": "bidet"
+                "img": "bidveneto.jpg",
+                "tipo": "bidet",
             },
 
-        ]
+        ],
 
         depositos = [
 
             {
-                "id": 1,
+                "id": 13,
                 "nombre": "Marina",                
                 "descripcion": "Depósito de apoyo Marina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "marina.jpg",
-                "tipo": "depósito"
+                "img": "depomarina.jpg",
+                "tipo": "deposito"
             },
             {
-                "id": 2,
+                "id": 14,
                 "nombre": "Bari",
                 
                 "descripcion": "Depósito de apoyo Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "bari.jpg,",
-                 "tipo": "depósito",          
+                "img": "depodbari.jpg",
+                 "tipo": "deposito"
                  },
 
             {
-                "id": 3,
+                "id": 15,
                 "nombre": "Andina",
                 
                 "descripcion": "Depósito de apoyo Andina blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "andina.jpg",
-                "tipo": "depósito",
+                "img": "depoandina.jpg",
+                "tipo": "deposito",
              },
             {
-                "id": 4,
+                "id": 16,
                 "nombre": "Trento",
                 
                 "descripcion": "Depósito de apoyo Trento blanco Ferrum",
                 "precio": 9000,
                 "stock": 30,
-                "img": "trento.jpg",
-                "tipo": "depósito",
+                "img": "depotrento.jpg",
+                "tipo": "deposito",
                 
             },
             {
-                "id": 5,
+                "id": 17,
                 "nombre": "Varese",
                 
                 "descripcion": "Depósito de apoyo Varese blanco Ferrum",
                 "precio": 14000,
                 "stock": 10,
-                "img": "varese.jpg",
-                "tipo": "depósito",
+                "img": "depovarese.jpg",
+                "tipo": "deposito",
                 
             },
             {
-                "id": 6,
+                "id": 18,
                 "nombre": "Veneto",
                 
                 "descripcion": "Depósito de apoyo Veneto blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "veneto.jpg",
-                "tipo": "depósito",
+                "img": "depoveneto.jpg",
+                "tipo": "deposito",
             },
-          ]
+        ]
+    ]
     }
 }
