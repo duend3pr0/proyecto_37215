@@ -1,12 +1,9 @@
 
 class GestionarProductos {
 
-    iniciar() {
-
-        //Arreglo de productos
+    iniciar() {       
        
-       productos = [ inodoros = [
-
+       productos = [ 
             {
                 "id": 1,
                 "nombre": "Marina",                
@@ -69,11 +66,7 @@ class GestionarProductos {
                 "img": "inodveneto.jpg",
                 "tipo": "inodoro",
             },          
-        ],
-
-        bidets = [
-            
-            {
+                {
                 "id": 7,
                 "nombre": "Marina",                
                 "descripcion": "Bidet 3 agujeros Marina blanco Ferrum",
@@ -135,11 +128,6 @@ class GestionarProductos {
                 "img": "bidveneto.jpg",
                 "tipo": "bidet",
             },
-
-        ],
-
-        depositos = [
-
             {
                 "id": 13,
                 "nombre": "Marina",                
@@ -201,8 +189,7 @@ class GestionarProductos {
                 "stock": 30,
                 "img": "depoveneto.jpg",
                 "tipo": "deposito",
-            },
-        ]
-    ]
+            },]
+            
     }
 }
