@@ -15,8 +15,7 @@ class GestionarProductos {
             },
             {
                 "id": 2,
-                "nombre": "Bari",
-                
+                "nombre": "Bari",                
                 "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
@@ -190,6 +189,34 @@ class GestionarProductos {
                 "img": "depoveneto.jpg",
                 "tipo": "deposito",
             },]
-            
+            this.cargarproductos(productos);
     }
+
+    cargarproductos(productos){
+        const divProductos = document.querySelector('#cards');
+        divProductos.innerHTML = "";
+        divProductos.classList.add('row','gap-4');
+        productos.forEach((producto) => {
+            let prod = document.createElement('div');
+            prod.classList.add('card');
+            prod.setAttribute('style','width: 18rem')
+            prod.setAttribute('id','producto'+producto.id);
+            prod.innerHTML = `
+            <img src="./img/${producto.img}" class="card-img-top" alt="Inodoro de la card ">
+            <div class="card-body">
+              <h5 class="card-title">${producto.nombre} </h5>
+              <p class="card-text">${producto.descripcion}</p>
+              <h3 class="precio">$${producto.precio}</h3>
+              <a href="javascript:addCarrito(id)" class="btn btn-primary">Agregar al carrito</a>
+            </div>         
+            
+            `
+            divProductos.appendChild(prod);
+
+
+            
+        });
+
+    
+}
 }
