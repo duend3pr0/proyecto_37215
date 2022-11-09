@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/duend3pr0/proyecto_37215#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19",
-    "bootstrap": "5.2.0"
+    "bootstrap": "5.2.0",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "abbrev": "^1.1.1",
