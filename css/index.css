@@ -52,6 +52,7 @@ a {
 
 .header {
   justify-content: space-between;
+  align-items: baseline;
   padding: 24px 24px;
   font-family: "Roboto Slab", serif;
   border-bottom: 1px solid #36A2F0; }
@@ -79,6 +80,26 @@ a {
     transition: all .3s; }
     .header__link--active {
       border: 2px solid #1871D9; }
+
+.header-buscador-marco {
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 15px; }
+
+.header-buscador-marco input {
+  width: 90%;
+  height: 30px;
+  border: 0;
+  color: grey; }
+
+.header-buscador-marco input:focus {
+  border: 0; }
 
 .footer {
   font-family: "Roboto Slab", serif;
@@ -123,29 +144,67 @@ body {
   height: 100vh;
   background: #FFFAFA; }
 
-.home__text {
+.main__text {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: #1871D9;
-  flex-wrap: wrap;
-  margin: 48px 0;
-  position: relative; }
+  align-items: center; }
 
-.home__title1 {
-  font-size: 48px;
-  color: #2D2B2B;
-  margin-bottom: 36px; }
+.main__text--title {
+  font-size: 3rem;
+  color: #36A2F0; }
 
-.home__slogan {
-  font-size: 48px;
-  color: #FFFAFA;
-  font-size: 36px; }
+.main__text--p {
+  font-size: 2rem; }
 
 .card-imgg {
   width: 150px;
   height: 150px; }
+
+.productos {
+  font-size: 2.5rem; }
+
+#mensajeProd {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1rem; }
+
+.img__card {
+  width: 100%; }
+
+.cuerpo__card {
+  background-color: #c1c8fc;
+  border-radius: 10px; }
+
+.cuerpo__titulo {
+  color: blue;
+  font-family: "Roboto Slab", serif; }
+
+.texto__tarjeta {
+  color: black; }
+
+.precio {
+  color: #81810b; }
+
+.boton__addCarrito {
+  font-family: "Roboto Slab", serif;
+  background-color: #e91111; }
+
+.boton__addCarrito:hover {
+  font-family: "Roboto Slab", serif;
+  background-color: #e91111;
+  border: 2px black;
+  border-radius: 10px; }
+
+#iconoCarrito {
+  font-size: 1.5rem; }
+
+.carritoicono {
+  font-size: 1.5rem; }
+
+#badgeCarrito {
+  font-size: 1.5rem; }
 
 .productos {
   justify-content: center;

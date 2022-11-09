@@ -19,11 +19,19 @@
     <main class="container">
         <!-- clases flex-roww helper creada con mixin, con 2 "w" para diferenciarla de la clase de bootstrap" -->
     <header id="header" class="container header flex-roww jc-spacebetween wrap">
+        <div>
             <a class="header__logo" href="./index.html"><img src="./img/logoparahtml.png" alt=""></a>
+        </div>
+            <div class=" d-flex align-items-center justify-content-center">
+                <div class="header-buscador-marco">
+                    <input type="text" name="buscar" id="buscar" placeholder="Buscar producto">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div>
 		<nav class="header__nav flex-roww">
 			<ul class="header__nav wrap header__ul flex-roww wrap">
-                <li class="header__ul--li">
-                    <a class="header__link  header__link-active" href="./views/productos.html">Productos</a></li>
+                
                 <li class="header__ul--li">
                     <a class="header__link" href="./views/lineasdebano.html">Líneas de baño</a></li>
                 <li class="header__ul--li">
@@ -32,13 +40,48 @@
                     <a class="header__link" href="./views/contact.html">Contacto</a></li>
             </ul>
 		</nav>
-        
+    </div>
+    
+    <div class="">
+
+        <a   
+            
+            class="carritoicono" 
+            aria-label="View your shopping cart"
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasRight" 
+            aria-controls="offcanvasRight">
+
+            <i class="fa-solid fa-cart-shopping" id="iconoCarrito">
+                <span class=""
+                             
+                             id="badgeCarrito">
+                        0
+                </span>
+            </i>
+
+        </a>
+
+    </div>
+    
+
+
+
 	</header>
+    <h2 class="text-center " id="mensajeProd">No se han encontrado coincidencias</h2>
+    <div class="main__text" id="maintext">
+    <div>
+        <h1 class="main__text--title">BIENVENIDO A OJH SANITARIOS</h1>
+    </div>
+        <p class="main__text--p">Te presentamos nuestra colección de productos para baños</p>
+</div>
+
+
    
 
 
     <section class="row gap-4" id="productos">
-        <h2 class="text-center" id="mensajeProd">PRODUCTOS</h2>
+        
     <div id="cards">
         <!-- <div class="card " style="width: 18rem;">
         <img src="./img/inodandina.jpg" class="card-img-top" alt="...">

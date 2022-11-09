@@ -19,7 +19,7 @@ class GestionarProductos {
                 "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "inodbari.jpg,",
+                "img": "inodbari.jpg",
                  "tipo": "inodoro",          
                  },
 
@@ -81,7 +81,7 @@ class GestionarProductos {
                 "descripcion": "Bidet 3 agujeros Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "bidbari.jpg,",
+                "img": "bidbari.jpg",
                  "tipo": "bidet",          
                  },
 
@@ -143,7 +143,7 @@ class GestionarProductos {
                 "descripcion": "Depósito de apoyo Bari blanco Ferrum",
                 "precio": 8000,
                 "stock": 30,
-                "img": "depodbari.jpg",
+                "img": "depobari.jpg",
                  "tipo": "deposito"
                  },
 
@@ -198,16 +198,16 @@ class GestionarProductos {
         divProductos.classList.add('row','gap-4');
         productos.forEach((producto) => {
             let prod = document.createElement('div');
-            prod.classList.add('card');
+            prod.classList.add('card','tarjeta');
             prod.setAttribute('style','width: 18rem')
             prod.setAttribute('id','producto'+producto.id);
             prod.innerHTML = `
-            <img src="./img/${producto.img}" class="card-img-top" alt="Inodoro de la card ">
-            <div class="card-body">
-              <h5 class="card-title">${producto.nombre} </h5>
-              <p class="card-text">${producto.descripcion}</p>
+            <img src="./img/${producto.img}" class="card-img-top img__card" alt="Inodoro de la card ">
+            <div class="card-body cuerpo__card">
+              <h5 class="card-title cuerpo__titulo">${producto.nombre} </h5>
+              <p class="card-text texto__tarjeta">${producto.descripcion}</p>
               <h3 class="precio">$${producto.precio}</h3>
-              <a href="javascript:addCarrito(id)" class="btn btn-primary">Agregar al carrito</a>
+              <a href="javascript:addCarrito(id)" class="btn btn-primary boton__addCarrito">Agregar al carrito</a>
             </div>         
             
             `

@@ -1,5 +1,6 @@
 .header{ 
   justify-content: space-between;
+  align-items: baseline;
   padding: $spacing-sm $spacing-sm;
   font-family: $textLinks;
   border-bottom: 1px solid map-get($colors, fourth);
@@ -46,6 +47,28 @@
                 }
                  
                 }
+                .header-buscador-marco {
+                  height: 40px;
+                  border: 1px solid #CCCCCC;
+                  width: 100%;
+                  border-radius: 6px;
+                  display: flex;
+                  justify-content:space-between;
+                  align-items: center;  
+                  padding-left: 5px;
+                  padding-right: 15px;
+              }
+              
+              .header-buscador-marco input{
+                  width: 90%;
+                  height: 30px;
+                  border: 0;
+                  color: grey;
+              }
+              
+              .header-buscador-marco input:focus{
+                  border: 0;
+              }
               
           
          
