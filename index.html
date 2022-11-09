@@ -42,18 +42,24 @@
 		</nav>
     </div>
     
-    <div class="">
+    <div class=" d-flex align-items-center justify-content-end">
 
         <a   
             
-            class="carritoicono" 
+            class="cart position-relative d-inline-flex" 
             aria-label="View your shopping cart"
             data-bs-toggle="offcanvas" 
             data-bs-target="#offcanvasRight" 
             aria-controls="offcanvasRight">
 
-            <i class="fa-solid fa-cart-shopping" id="iconoCarrito">
-                <span class=""
+            <i class="fa-solid fa-cart-shopping position-relative" id="iconoCarrito">
+                <span class="position-absolute 
+                             top-0 
+                             start-100 
+                             translate-middle 
+                             badge 
+                             rounded-pill 
+                             bg-danger"
                              
                              id="badgeCarrito">
                         0
@@ -63,7 +69,6 @@
         </a>
 
     </div>
-    
 
 
 
