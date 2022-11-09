@@ -149,7 +149,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 3rem; }
 
 .main__text--title {
   font-size: 3rem;
@@ -196,15 +197,6 @@ body {
   background-color: #e91111;
   border: 2px black;
   border-radius: 10px; }
-
-#iconoCarrito {
-  font-size: 1.5rem; }
-
-.carritoicono {
-  font-size: 1.5rem; }
-
-#badgeCarrito {
-  font-size: 1.5rem; }
 
 .productos {
   justify-content: center;
