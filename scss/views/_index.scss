@@ -3,7 +3,23 @@ body{
     background: map-get($colors, secondary);
 }    
 
+#contenedor {
+    width: 100%;
+    
+}
+.buscador{
+    width: 100;;
+}
+.mensaje{
+    width: 100%;
+}
+#productos{
+    width: 100%;
+    margin: 0!important; 
+    padding: 0!important; 
+}
 .main__text{
+    width: 100%;
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
@@ -29,6 +45,7 @@ body{
 
 .productos {
     font-size: 2.5rem;
+    
 }
 #mensajeProd{
     color: black;
@@ -68,3 +85,12 @@ body{
 
 }
 
+
+.tituloCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    font-size: 4rem;
+    margin: 3rem 0;
+}

@@ -1,6 +1,4 @@
-
-
-class Bidets{
+class Producto {
     
 
     constructor(id,nombre,descripcion,precio,stock,img,tipo){

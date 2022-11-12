@@ -10,8 +10,7 @@
     <meta name="description" content="Venta de loza sanitaria para baños, incluyendo inodoros, bidets, bachas, bañeras y asientos">
     <title>OJH SANITARIOS| Inodoros, Bidets, Asientos, Bañeras</title>
     <!-- links a los estilos, bootstrap y css dedicado -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://kit.fontawesome.com/f1f4012b34.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <!-- Favicon -->
@@ -24,12 +23,7 @@
         <div>
             <a class="header__logo" href="./index.html"><img src="./img/logoparahtml.png" alt=""></a>
         </div>
-            <div class=" d-flex align-items-center justify-content-center">
-                <div class="header-buscador-marco">
-                    <input type="text" name="buscar" id="buscar" placeholder="Buscar producto">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+           
             <div>
 		<nav class="header__nav flex-roww">
 			<ul class="header__nav wrap header__ul flex-roww wrap">
@@ -75,36 +69,88 @@
 
 
 	</header>
-    <h2 class="text-center " id="mensajeProd">No se han encontrado coincidencias</h2>
+    
     <div class="main__text" id="maintext">
-    <div>
-        <h1 class="main__text--title">BIENVENIDO A OJH SANITARIOS</h1>
-    </div>
-        <p class="main__text--p">Te presentamos nuestra colección de productos para baños</p>
-</div>
+        <div>
+            <h1 class="main__text--title">BIENVENIDO A OJH SANITARIOS</h1>
+        </div>
+            <p class="main__text--p">Te presentamos nuestra colección de productos para baños</p>
+        </div>
 
 
+    <div id="contenedor">
+        <div class="buscador d-flex align-items-center justify-content-center">
+            <div class="header-buscador-marco">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar producto">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="mensaje">
+            <h2 class="text-center " id="mensajeProd">No se han encontrado coincidencias</h2>
+        </div>
    
 
-
-    <section class="row gap-4" id="productos">
+        <h3 class="tituloCard">INODOROS</h3>
+        <section class="row gap-4" id="inodoros">
         
-    <div id="cards">
-        <!-- <div class="card " style="width: 18rem;">
-        <img src="./img/inodandina.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Andina </h5>
-          <p class="card-text">Inodoro de apoyo Andina</p>
-          <h3 class="precio">$1200</h3>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
-        </div> -->
-    </div>
+            <div id="cards">
+        
+         </div>    
       
-      
-      
-    </section>
+        </section>
 
+        <h3 class="tituloCard">BIDETS</h3>
+        <section class="row gap-4" id="bidets">
+        
+            <div id="cards">
+        
+         </div>    
+      
+        </section>
+
+        <h3 class="tituloCard">DEPOSITOS</h3>
+        <section class="row gap-4" id="depositos">
+        
+            <div id="cards">
+        
+         </div>    
+      
+        </section>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Tu pedido</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div id="idCarrito">
+                
+                    <div class="row">
+
+                        <div class="col"></div>
+                        <div class="col">Nombre</div>
+                        <div class="col">Precio</div>
+                        <div class="col">Cantidad</div>
+                        <div class="col"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>    
+              
+    </div>
+
+
+
+
+
+
+
+    </div>
 
 
 
