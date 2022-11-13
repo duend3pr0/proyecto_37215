@@ -194,6 +194,8 @@ class GestionarProductos {
             let depositos = productos.filter((prod)=> prod.tipo == "deposito");
             
             this.cargarProductos(inodoros);
+            this.showCart();
+            this.actCount();
             
     }
 
@@ -270,7 +272,7 @@ addCart( infoProducto ) {
                 return producto;
             }
 
-            carrito = articulos;               
+                    
 
         })
 
@@ -337,53 +339,62 @@ addCart( infoProducto ) {
 
      // Actualizar detalle del carrito
      showCart() { 
+        
 
         let divCart = document.querySelector('#detailCart');
 
         divCart.innerHTML = '';
 
         let total = 0;
+
+        if (carrito.length == 0){
+            divCart.innerHTML = "No hay productos en la lista";
+        } else{
        
 
         carrito.forEach( ( producto ) => {        
 
-            const row = document.createElement('div');
-            row.classList.add('rowCarrito');
-            
-            total += parseInt(producto.precio);
-            console.log(producto);
+             
 
-            row.innerHTML = `
+            const row = document.createElement('div');
+            row.classList.add('row');
+            
+            total = total + parseInt(producto.precio);
+                        row.innerHTML =`
                 
             <div class="rowCarrito">
-            <img src="./img/${producto.img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
+            <img src="${producto.img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
             <div class="card-body cuerpo__card cardCarritoo">
               <p class="card-text texto__tarjeta">${producto.descripcion}</p>
+              <h6 class="cantidad">${producto.cantidad}</h6>
               <h6 class="precio">$${producto.precio}</h6>
-              <a href=""javascript:eliminar(${producto.id})" class="btn btn-primary boton__addCarrito"><i class="fa-solid fa-square-minus fa-2x"></i></a>
+             
+              
+              <a href="javascript:eliminar(${producto.id})" class="btn btn-primary boton__addCarrito"><i class="fa-solid fa-square-minus fa-2x"></i></a>
             </div>
            
 
-    </div>
+            </div>
             `;
 
             
             divCart.appendChild(row);
 
         })
+    }
 
-        let row = document.createElement('div');
-        row.classList.add('row');
+        let totalArt = document.createElement('div');
+        totalArt.classList.add('totalContainer');
         
-        row.innerHTML = `   <div class="col-4 d-flex align-items-center justify-content-start p-2 border-bottom">
-                                Total a pagar:
-                            </div>
-                            <div class="col-8 d-flex align-items-center justify-content-end p-2 border-bottom">
-                                <b> $ ${total}</b>
-                            </div>`;
+        totalArt.innerHTML = `   <div class="total">
+                                    Total a pagar
+                                 </div>
+                                <div class="precioFinal">
+                                    $${total}
+                                </div>`;
 
         // Agrega el HTML del carrito en el tbody
-            divCart.appendChild(row);
+            divCart.appendChild(totalArt);
              }
 
 
@@ -391,7 +402,7 @@ addCart( infoProducto ) {
 
 
 // A partir de un id se elimina el producto
-deleteArt( id ) { 
+deleteArt(id) { 
 
     let resp = confirm("Esta seguro de eliminar el producto ?")
     if (resp)  {
@@ -409,8 +420,7 @@ deleteArt( id ) {
 
 
               // Guardar en Storage
-    saveCart() { 
-    
+    saveCart() {     
         localStorage.setItem('carrito', JSON.stringify( carrito ));        
     }
 
