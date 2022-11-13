@@ -94,3 +94,41 @@ body{
     font-size: 4rem;
     margin: 3rem 0;
 }
+.rowCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardCarritoo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedorCarrito{
+    width: 800px !important;
+
+}
+.imgCarrito{
+    width: 20%;
+    padding: 0 !important;
+}
+.texto__tarjeta{
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+.precio{
+    font-size: 1.5rem;
+}
+.totalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.total{
+    padding-right:  2rem !important;
+    color: green;
+}
+.precioFinal{
+    color: red;
+}
