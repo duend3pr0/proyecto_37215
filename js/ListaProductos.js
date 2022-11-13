@@ -270,7 +270,7 @@ cargarDepositos(productos){
         <img src="./img/${producto.img}" class="card-img-top img__card" alt="Deposito de la card ">
         <div class="card-body cuerpo__card">
           <h5 class="card-title cuerpo__titulo">${producto.nombre} </h5>
-          <p class="card-text texto__tarjeta">${producto.descripcion}</p>
+          <h4 class="card-text texto__tarjeta">${producto.descripcion}</h4>
           <h3 class="precio">$${producto.precio}</h3>
           <a href="javascript:addCarrito(id)" class="btn btn-primary boton__addCarrito">Agregar al carrito</a>
         </div>
@@ -319,14 +319,14 @@ addCart( infoProducto ) {
 
         })
 
-            alert("Se actulizo la cantidad del producto");
+            alert("Se actualizo la cantidad del producto");
 
     }
     else 
     {
         // Como no existe lo agrego
         carrito.push(infoProducto);
-        alert("Se agrego el producto");
+        alert("Se agrego el producto exitosamente");
 
     }
 
@@ -346,6 +346,101 @@ addCart( infoProducto ) {
 
         return contadorProductos;
     }
+
+
+
+
+
+    actualizarCarrito() {
+
+        
+        this.actualizarContador();
+
+        
+        this.showCart();
+
+        
+        this.guardarCarrito();
+    }
+
+
+
+    // Actualizar contador carrito
+    actualizarContador() { 
+
+        let totalArticulos = this.contarProductos();
+
+        let countCarrito = document.querySelector('#badgeCarrito');
+
+        // Actualizar contador del carrito
+        countCarrito.innerHTML = totalArticulos;
+
+    }
+
+
+
+
+     // Actualizar detalle del carrito
+     showCart() { 
+
+        let divCart = document.querySelector('#detailCart');
+
+        divCart.innerHTML = '';
+
+        let total = 0;
+
+        carrito.forEach( ( producto ) => {
+        
+
+            const row = document.createElement('div');
+            row.classList.add('row');
+            
+            total += parseInt(producto.precio);
+
+            row.innerHTML = `
+                
+                        <div class="col d-flex align-items-center p-2 border-bottom">
+                            <img src="${producto.img}" width="80"/>
+                        </div>
+
+                        <div class="col d-flex align-items-center p-2 border-bottom">
+                            ${producto.descripcion}
+                        </div>
+
+                        <div class="col d-flex align-items-center justify-content-end p-2 border-bottom">
+                            $${producto.precio}
+                        </div>
+
+                        <div class="col d-flex align-items-center justify-content-end p-2 border-bottom">
+                            ${producto.cantidad}
+                        </div>
+
+                        <div class="col d-flex align-items-center justify-content-center p-2 border-bottom">
+                            <a href="javascript:eliminar(${producto.id})">
+                                <i class="fa-solid fa-square-minus fa-2x"></i>
+                            </a>
+                        </div>
+            `;
+
+            
+            divCart.appendChild(row);
+
+        })
+
+        let row = document.createElement('div');
+        row.classList.add('row');
+        
+        row.innerHTML = `   <div class="col-4 d-flex align-items-center justify-content-start p-2 border-bottom">
+                                Total a pagar:
+                            </div>
+                            <div class="col-8 d-flex align-items-center justify-content-end p-2 border-bottom">
+                                <b> $ ${total}</b>
+                            </div>`;
+
+        // Agrega el HTML del carrito en el tbody
+        currentCart.appendChild(row);
+    }
+
 
 
 

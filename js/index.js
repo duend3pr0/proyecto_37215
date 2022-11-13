@@ -20,16 +20,13 @@ document.addEventListener('DOMContentLoaded',() =>{
 
 function addCarrito(id) {
     
-    const prod = document.querySelector('producto'+id);
-    let producto = new Producto (   id,
-                                    prod.querySelector('p').textContent,
-                                    prod.querySelector('.precio').textContent.substring(1,6),
-                                    prod.querySelector('img').src
-                                );
+    const prod = document.querySelector('#producto'+id);
+    let producto = new Productos (id, prod.querySelector('h5').textContent , prod.querySelector('p').textContent, prod.querySelector('h3'), prod.querySelector('img').src); 
+    
 
 
    
-    sistema.addCart( producto );
+    sistema.addCart(producto);
 }
 
 
