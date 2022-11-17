@@ -265,25 +265,26 @@ addCart( infoProducto ) {
             if(producto.id === infoProducto.id)
             {
                 producto.cantidad++;
+                producto.precio = producto.precio * producto.cantidad;
                 return producto;
             }
             else
             {
                 return producto;
             }
-
+            carrito = articulos;  
                     
 
         })
 
-            alert("Se actualizo la cantidad del producto");
+            this.mensajeCarrito("Se acualizó la cantidad del producto");
 
     }
     else 
     {
         // Como no existe lo agrego
         carrito.push(infoProducto);
-        alert("Se agrego el producto exitosamente");
+        this.mensajeCarrito("Producto agregado al carrito");
 
     }
 
@@ -318,6 +319,15 @@ addCart( infoProducto ) {
 
         
         this.saveCart();
+    }
+
+    mensajeCarrito(mensaje){
+        Toastify({
+            text: mensaje ,
+            duration: "2000",
+            gravity: "bottom"
+
+        }).showToast();
     }
 
 
@@ -365,12 +375,12 @@ addCart( infoProducto ) {
             <div class="rowCarrito">
             <img src="${producto.img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
             <div class="card-body cuerpo__card cardCarritoo">
-              <p class="card-text texto__tarjeta">${producto.descripcion}</p>
-              <h6 class="cantidad">${producto.cantidad}</h6>
-              <h6 class="precio">$${producto.precio}</h6>
-             
-              
-              <a href="javascript:eliminar(${producto.id})" class="btn btn-primary boton__addCarrito"><i class="fa-solid fa-square-minus fa-2x"></i></a>
+              <p class="card-text texto__tarjeta ">${producto.descripcion}</p>
+              <a href="javascript:borrarUnidad(${producto.id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-minus fa-2x"></i></a>
+              <h6 class="cantidad padd-card">${producto.cantidad}</h6>
+              <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-plus fa-2x"></i></a>
+              <h6 class="precio padd-card">$${producto.precio}</h6>
+                           
             </div>
            
 
@@ -404,14 +414,37 @@ addCart( infoProducto ) {
 // A partir de un id se elimina el producto
 deleteArt(id) { 
 
-    let resp = confirm("Esta seguro de eliminar el producto ?")
-    if (resp)  {
-        carrito = carrito.filter( producto => producto.id != id);
-        this.actualizarCarrito();
+    Swal.fire({
+        title: "Confirma eliminar producto?",
+        showCancelButton: true,
+        cancelButtonColor: "red",
+        confirmButtonText: "Confirmar",
+        cancelbuttonText: "Abortar eliminar producto"
+    }).then( (respuesta) => {
+        if(respuesta.isConfirmed){        
+            carrito = carrito.filter( producto => producto.id != id);
+            
+            this.actualizarCarrito();
+            this.mensajeCarrito("Producto eliminado");
+    }
+        })
+    
 
-        alert("El articulo fue eliminado del carrito");
 
-    }            
+
+    // let resp = confirm("Esta seguro de eliminar el producto ?")
+    // if (resp)  {
+    //     carrito = carrito.filter( producto => producto.id != id);
+    //     this.actualizarCarrito();
+
+    //     Swal.fire({
+    //         position: 'center',
+    //         icon: 'info',
+    //         title: 'Producto eliminado del carrito exitosamente',
+    //         showConfirmButton: false,
+    //         timer: 1500
+    //       })
+    // }            
 
 }
 

@@ -203,12 +203,23 @@ body {
 .texto__tarjeta {
   color: black; }
 
+.cantidad {
+  font-size: 1.5rem; }
+
 .precio {
   color: #81810b; }
 
 .boton__addCarrito {
   font-family: "Roboto Slab", serif;
   background-color: #e91111; }
+
+.boton__addCarritocanvas {
+  font-family: "Roboto Slab", serif;
+  background-color: #e91111;
+  font-size: 1rem; }
+
+.padd-card {
+  padding: 0 1rem; }
 
 .boton__addCarrito:hover {
   font-family: "Roboto Slab", serif;

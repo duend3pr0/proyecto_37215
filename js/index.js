@@ -23,15 +23,18 @@ function addCarrito(id) {
     
     const prod = document.querySelector('#producto'+id);
     let producto = new Productos (id, prod.querySelector('h5').textContent , prod.querySelector('p').textContent, parseInt(prod.querySelector('h6').textContent), prod.querySelector('img').src); 
-  console.log(producto);
-
 
    
     sistema.addCart(producto);
 }
 
 // Eliminar un articulo del carrito
-function eliminar( id ) {   
+function agregarUnidad( id ) {   
+
+    sistema.addArt(id);
+}
+
+function borrarUnidad( id ) {   
 
     sistema.deleteArt(id);
 }
@@ -51,8 +54,8 @@ document.querySelector('#buscar').addEventListener('keyup', () => {
         
         //Muestro todo sino hay nada el buscador   
         
-        gestor.mensajeAviso('Todos los productos en stock');
-        gestor.cargarProductos( productos );
+        sistema.mensajeAviso('Todos los productos en stock');
+        sistema.cargarProductos( productos );
     } 
 
 })

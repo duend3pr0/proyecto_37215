@@ -69,19 +69,39 @@ body{
 .texto__tarjeta{
     color: black;
 }
+
+.cantidad{
+    font-size: 1.5rem;
+}
+
+
 .precio{
     color: rgb(129, 129, 11);
+    
 }
 .boton__addCarrito{
     font-family: $textLinks;
     background-color: rgb(233, 17, 17);
 }
+
+.boton__addCarritocanvas{
+    font-family: $textLinks;
+    background-color: rgb(233, 17, 17);
+    font-size: 1rem;
+}
+
+.padd-card{
+    padding: 0 1rem;
+}
+
+
 .boton__addCarrito:hover{
 
     font-family: $textLinks;
     background-color: rgb(233, 17, 17);
     border: 2px black;
     border-radius: 10px;
+
 
 }
 
