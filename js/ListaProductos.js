@@ -264,8 +264,7 @@ addCart( infoProducto ) {
 
             if(producto.id === infoProducto.id)
             {
-                producto.cantidad++;
-                producto.precio = producto.precio * producto.cantidad;
+                producto.cantidad++;               
                 return producto;
             }
             else
