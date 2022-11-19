@@ -7,26 +7,67 @@ class GestionarProductos {
         .then(respuesta => respuesta.json())
         .then(resultado =>{
             productos = resultado.productos;
-        })
-       
-      
-            let inodoros = productos.filter((prod)=> prod.tipo == "inodoro");
-            let bidets = productos.filter((prod)=> prod.tipo == "bidet");
-            let depositos = productos.filter((prod)=> prod.tipo == "deposito");
-            let marina = productos.filter((prod)=> prod.nombre == "Marina" );
-            let bari = productos.filter((prod)=> prod.nombre == "Bari" );
-            let andina = productos.filter((prod)=> prod.nombre == "Andina" );
-            let trento = productos.filter((prod)=> prod.nombre == "Trento" );
-            let varese = productos.filter((prod)=> prod.nombre == "Varese" );
-            let veneto = productos.filter((prod)=> prod.nombre == "Veneto" );
-
-        
             
-            this.cargarProductos(inodoros);
+            
+            let marina = productos.filter( prod => prod.linea == "Marina" );
+            let andina = productos.filter( prod => prod.linea == "Andina" );
+            let bari = productos.filter( prod => prod.linea == "Bari" );
+            let trento = productos.filter( prod => prod.linea == "Trento" );
+            let veneto = productos.filter( prod => prod.linea == "Veneto" );
+            let varese = productos.filter( prod => prod.linea == "Varese" );
+
+
+
+
+            this.cargarLineas(veneto);
+            
+            this.cargarProductos(productos);
             this.showCart();
             this.actCount();
+            
+            
+        })     
+                    
                        
     }
+
+
+    cargarLineas(linea){
+        const divLineas = document.getElementById('lineas');
+        divLineas.innerHTML = "";
+                       
+        if(linea.length === 0){
+            divLineas.innerHTML= "No hay productos en la línea elegida";
+        }else{
+                divLineas.classList.add('div__secondary')
+                linea.forEach((producto)=>{
+                let prod = document.createElement('div');
+                prod.classList.add('card','tarjeta','tarjeta__premium');
+                prod.setAttribute('style','width: 28rem')
+                prod.setAttribute('id','producto'+producto.id);
+                prod.innerHTML = `
+                <img src="./img/${producto.img}" class="card-img-top img__card" alt="Inodoro de la card ">
+                <div class="card-body cuerpo__card cuerpo__premium">
+                  <h5 class="card-title cuerpo__titulo titulo__premium">${producto.linea} </h5>
+                  <p class="card-text texto__tarjeta texto__premium">${producto.descripcion}</p>
+                  <div class="numeros__premium">
+                  <h6 class="precio precio__premium">${producto.precio}</h6>
+                  <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarrito btn__premium">Agregar al carrito</a>
+                  </div> 
+                  </div>         
+                
+                `;
+                divLineas.appendChild(prod)
+
+
+            })
+            
+
+           
+        }
+
+    }
+    
 
     cargarProductos(productos){
         const divProductos = document.getElementById('productos');
@@ -37,10 +78,7 @@ class GestionarProductos {
             this.mensajeAviso('No se han encontrado productos para su búsqueda');
             return false;
         } 
-        else {          
-
-
-
+        else {      
 
         divProductos.classList.add('row','gap-4');
             productos.forEach((producto) => {
@@ -51,7 +89,7 @@ class GestionarProductos {
             prod.innerHTML = `
             <img src="./img/${producto.img}" class="card-img-top img__card" alt="Inodoro de la card ">
             <div class="card-body cuerpo__card">
-              <h5 class="card-title cuerpo__titulo">${producto.nombre} </h5>
+              <h5 class="card-title cuerpo__titulo">${producto.linea} </h5>
               <p class="card-text texto__tarjeta">${producto.descripcion}</p>
               <h6 class="precio">${producto.precio}</h6>
               <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarrito">Agregar al carrito</a>
@@ -73,7 +111,7 @@ class GestionarProductos {
     buscar( q ) { 
 
 
-    let resultado = productos.filter( producto => producto.nombre.toLowerCase().includes( q.toLowerCase() ) || producto.descripcion.toLowerCase().includes( q.toLowerCase() ) || producto.tipo.toLowerCase().includes( q.toLowerCase() ));      
+    let resultado = productos.filter( producto => producto.linea.toLowerCase().includes( q.toLowerCase() ) || producto.descripcion.toLowerCase().includes( q.toLowerCase() ) || producto.tipo.toLowerCase().includes( q.toLowerCase() ));      
     this.cargarProductos( resultado );                   
 }
 

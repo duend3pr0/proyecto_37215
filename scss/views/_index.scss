@@ -166,3 +166,44 @@ background-color: aliceblue   ;
 .final__compra{
     background-color: red;
 }
+
+.premium__title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.div__pemium{
+    display: flex;
+    flex-direction: row;
+}
+.div__secondary{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.tarjeta__premium{
+    margin: 0 0.8rem;
+}
+.titulo__premium{
+    font-size: 2.5rem;
+    color: rgb(231, 106, 17);
+    text-align: center;
+}
+.texto__premium{
+    color: aliceblue;
+    font-size: 1.9rem;
+}
+.numeros__premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.btn__premium{
+    background-color: lightblue ;
+    color: brown;
+}
+
+

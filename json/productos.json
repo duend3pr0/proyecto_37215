@@ -1,7 +1,7 @@
 { "productos": [ 
     {
         "id": 1,
-        "nombre": "Marina",                
+        "linea": "Marina",                
         "descripcion": "Inodoro de apoyo Marina blanco Ferrum",
         "precio": 8000,
         "stock": 30,
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "nombre": "Bari",                
+        "linea": "Bari",                
         "descripcion": "Inodoro de apoyo Bari blanco Ferrum",
         "precio": 8000,
         "stock": 30,
@@ -20,7 +20,7 @@
 
     {
         "id": 3,
-        "nombre": "Andina",
+        "linea": "Andina",
         
         "descripcion": "Inodoro de apoyo Andina blanco Ferrum",
         "precio": 8000,
@@ -30,7 +30,7 @@
      },
     {
         "id": 4,
-        "nombre": "Trento",
+        "linea": "Trento",
         
         "descripcion": "Inodoro de apoyo Trento blanco Ferrum",
         "precio": 9000,
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "nombre": "Varese",
+        "linea": "Varese",
         
         "descripcion": "Inodoro de apoyo Varese blanco Ferrum",
         "precio": 14000,
@@ -52,7 +52,7 @@
     },
     {
         "id": 6,
-        "nombre": "Veneto",
+        "linea": "Veneto",
         
         "descripcion": "Inodoro de apoyo Veneto blanco Ferrum",
         "precio": 8000,
@@ -62,7 +62,7 @@
     },          
         {
         "id": 7,
-        "nombre": "Marina",                
+        "linea": "Marina",                
         "descripcion": "Bidet 3 agujeros Marina blanco Ferrum",
         "precio": 8000,
         "stock": 30,
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "nombre": "Bari",
+        "linea": "Bari",
         
         "descripcion": "Bidet 3 agujeros Bari blanco Ferrum",
         "precio": 8000,
@@ -82,7 +82,7 @@
 
     {
         "id": 9,
-        "nombre": "Andina",
+        "linea": "Andina",
         
         "descripcion": "Bidet 3 agujeros Andina blanco Ferrum",
         "precio": 8000,
@@ -92,7 +92,7 @@
      },
     {
         "id": 10,
-        "nombre": "Trento",
+        "linea": "Trento",
         
         "descripcion": "Bidet 3 agujeros Trento blanco Ferrum",
         "precio": 9000,
@@ -103,7 +103,7 @@
     },
     {
         "id": 11,
-        "nombre": "Varese",
+        "linea": "Varese",
         
         "descripcion": "Bidet 3 agujeros Varese blanco Ferrum",
         "precio": 14000,
@@ -114,7 +114,7 @@
     },
     {
         "id": 12,
-        "nombre": "Veneto",
+        "linea": "Veneto",
         
         "descripcion": "Bidet 3 agujeros Veneto blanco Ferrum",
         "precio": 8000,
@@ -124,7 +124,7 @@
     },
     {
         "id": 13,
-        "nombre": "Marina",                
+        "linea": "Marina",                
         "descripcion": "Depósito de apoyo Marina blanco Ferrum",
         "precio": 8000,
         "stock": 30,
@@ -133,7 +133,7 @@
     },
     {
         "id": 14,
-        "nombre": "Bari",
+        "linea": "Bari",
         
         "descripcion": "Depósito de apoyo Bari blanco Ferrum",
         "precio": 8000,
@@ -144,7 +144,7 @@
 
     {
         "id": 15,
-        "nombre": "Andina",
+        "linea": "Andina",
         
         "descripcion": "Depósito de apoyo Andina blanco Ferrum",
         "precio": 8000,
@@ -154,7 +154,7 @@
      },
     {
         "id": 16,
-        "nombre": "Trento",
+        "linea": "Trento",
         
         "descripcion": "Depósito de apoyo Trento blanco Ferrum",
         "precio": 9000,
@@ -165,7 +165,7 @@
     },
     {
         "id": 17,
-        "nombre": "Varese",
+        "linea": "Varese",
         
         "descripcion": "Depósito de apoyo Varese blanco Ferrum",
         "precio": 14000,
@@ -176,7 +176,7 @@
     },
     {
         "id": 18,
-        "nombre": "Veneto",
+        "linea": "Veneto",
         
         "descripcion": "Depósito de apoyo Veneto blanco Ferrum",
         "precio": 8000,
@@ -184,5 +184,29 @@
         "img": "depoveneto.jpg",
         "tipo": "deposito"
     }
+],
+"lineas": [
+    {"id": 1,
+    "linea": "Marina"},
+    {"id": 2,
+    "linea": "Bari"},
+    {"id": 3,
+    "linea": "Andina"},
+    {"id": 4,
+    "linea": "Trento"},
+    {"id": 5,
+    "linea": "Varese"},
+    {"id": 6,
+    "linea": "Veneto"}
+
+],
+"tipo": [
+    {"id": 1,
+    "linea": "Inodoro"},
+    {"id": 2,
+    "linea": "Bidet"},
+    {"id": 3,
+    "linea": "Depósito"}
 ]
+
 }
