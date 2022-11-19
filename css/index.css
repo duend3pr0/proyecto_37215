@@ -207,11 +207,10 @@ body {
   font-size: 1.5rem; }
 
 .precio {
-  color: #81810b; }
+  color: !important; }
 
 .boton__addCarrito {
-  font-family: "Roboto Slab", serif;
-  background-color: #e91111; }
+  font-family: "Roboto Slab", serif; }
 
 .boton__addCarritocanvas {
   font-family: "Roboto Slab", serif;
@@ -223,7 +222,6 @@ body {
 
 .boton__addCarrito:hover {
   font-family: "Roboto Slab", serif;
-  background-color: #e91111;
   border: 2px black;
   border-radius: 10px; }
 
@@ -269,18 +267,12 @@ body {
   padding-right: 2rem !important;
   color: green; }
 
-.precioFinal {
-  color: red; }
-
 .finishbuy {
   margin: 1rem;
   display: flex;
   justify-content: end;
   align-items: center;
   background-color: aliceblue; }
-
-.final__compra {
-  background-color: red; }
 
 .premium__title {
   text-align: center;
@@ -299,11 +291,9 @@ body {
 
 .titulo__premium {
   font-size: 2.5rem;
-  color: #e76a11;
   text-align: center; }
 
 .texto__premium {
-  color: aliceblue;
   font-size: 1.9rem; }
 
 .numeros__premium {
@@ -311,10 +301,6 @@ body {
   flex-direction: column;
   justify-content: end;
   align-items: flex-end; }
-
-.btn__premium {
-  background-color: lightblue;
-  color: brown; }
 
 .productos {
   justify-content: center;

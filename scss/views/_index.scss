@@ -76,12 +76,14 @@ body{
 
 
 .precio{
-    color: rgb(129, 129, 11);
+    color: map-get($colors , $third ) !important;
+
     
 }
 .boton__addCarrito{
     font-family: $textLinks;
-    background-color: rgb(233, 17, 17);
+    background-color: map-get($colors , $fourth );
+
 }
 
 .boton__addCarritocanvas{
@@ -98,7 +100,8 @@ body{
 .boton__addCarrito:hover{
 
     font-family: $textLinks;
-    background-color: rgb(233, 17, 17);
+    background-color: map-get($colors , $fourth );
+
     border: 2px black;
     border-radius: 10px;
 
@@ -150,7 +153,8 @@ body{
     color: green;
 }
 .precioFinal{
-    color: red;
+    background-color: map-get($colors , $fourth );
+
 }
 
 
@@ -164,7 +168,8 @@ background-color: aliceblue   ;
 }
 
 .final__compra{
-    background-color: red;
+    background-color: map-get($colors , $fourth );
+
 }
 
 .premium__title{
@@ -188,11 +193,11 @@ background-color: aliceblue   ;
 }
 .titulo__premium{
     font-size: 2.5rem;
-    color: rgb(231, 106, 17);
+    color: map-get($colors, $primary );
     text-align: center;
 }
 .texto__premium{
-    color: aliceblue;
+    color: map-get($colors , $secondary );
     font-size: 1.9rem;
 }
 .numeros__premium{
@@ -202,8 +207,9 @@ background-color: aliceblue   ;
     align-items: flex-end;
 }
 .btn__premium{
-    background-color: lightblue ;
-    color: brown;
+    background-color: map-get($colors , $fourth );
+    color: map-get($colors, $primary )
 }
+
 
 
