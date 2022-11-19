@@ -272,6 +272,16 @@ body {
 .precioFinal {
   color: red; }
 
+.finishbuy {
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: aliceblue; }
+
+.final__compra {
+  background-color: red; }
+
 .productos {
   justify-content: center;
   align-items: center;

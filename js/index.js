@@ -1,10 +1,11 @@
 
-
 // Variables Globales
 let carrito  = new Array();
 let productos = [];
 
 const key_carrito = "carrito";
+
+const url = './json/productos.json';
 
 
 let sistema;
@@ -50,8 +51,7 @@ document.querySelector('#buscar').addEventListener('keyup', () => {
         sistema.mensajeAviso(`Resultados para: ${q}`);
         sistema.buscar( q );        
 
-    } else if ( q.length < 2 ) {
-        
+    } else if ( q.length < 2 || q.length == 0 ) {        
         //Muestro todo sino hay nada el buscador   
         
         sistema.mensajeAviso('Todos los productos en stock');
@@ -59,6 +59,28 @@ document.querySelector('#buscar').addEventListener('keyup', () => {
     } 
 
 })
+
+function finalizarCompra(){
+
+    Swal.fire({
+        title: "Desea finalizar la compra?",
+        showCancelButton: true,
+        cancelButtonColor: "red",
+        confirmButtonText: "Confirmar",        
+        cancelbuttonText: "No, seguir comprando",
+        input: "./views/contact.html"
+    }).then( (respuesta) => {
+        if(respuesta.isConfirmed){        
+            carrito = []            
+            sistema.actualizarCarrito();
+            sistema.mensajeCarrito("Carrito vacío");
+            
+
+            
+    }
+        })
+
+}
 
 
 
