@@ -40,19 +40,22 @@ class GestionarProductos {
             divLineas.innerHTML= "No hay productos en la línea elegida";
         }else{
                 divLineas.classList.add('div__secondary')
+
                 linea.forEach((producto)=>{
+                 const {id, linea, descripcion,precio, img,stock,cantidad} = producto;   
                 let prod = document.createElement('div');
                 prod.classList.add('card','tarjeta','tarjeta__premium');
                 prod.setAttribute('style','width: 28rem')
                 prod.setAttribute('id','producto'+producto.id);
                 prod.innerHTML = `
-                <img src="./img/${producto.img}" class="card-img-top img__card" alt="Inodoro de la card ">
+                <img src="./img/${img}" class="card-img-top img__card" alt="Inodoro de la card ">
                 <div class="card-body cuerpo__card cuerpo__premium">
-                  <h5 class="card-title cuerpo__titulo titulo__premium">${producto.linea} </h5>
-                  <p class="card-text texto__tarjeta texto__premium">${producto.descripcion}</p>
+                  <h5 class="card-title cuerpo__titulo titulo__premium">${linea} </h5>
+                  <p class="card-text texto__tarjeta texto__premium">${descripcion}</p>
+                  <p class="card-text texto__tarjeta">Stock:${stock}</p>
                   <div class="numeros__premium">
-                  <h6 class="precio precio__premium">${producto.precio}</h6>
-                  <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarrito btn__premium">Agregar al carrito</a>
+                  <h6 class="precio precio__premium">${precio}</h6>
+                  <a href="javascript:addCarrito(${id})" class="btn btn-primary boton__addCarrito btn__premium">Agregar al carrito</a>
                   </div> 
                   </div>         
                 
@@ -82,20 +85,24 @@ class GestionarProductos {
 
         divProductos.classList.add('row','gap-4');
             productos.forEach((producto) => {
+const {id, linea, descripcion,precio, img,stock,cantidad} = producto;
             let prod = document.createElement('div');
             prod.classList.add('card','tarjeta');
             prod.setAttribute('style','width: 18rem')
-            prod.setAttribute('id','producto'+producto.id);
+            prod.setAttribute('id','producto'+id);
             prod.innerHTML = `
-            <img src="./img/${producto.img}" class="card-img-top img__card" alt="Inodoro de la card ">
-            <div class="card-body cuerpo__card">
-              <h5 class="card-title cuerpo__titulo">${producto.linea} </h5>
-              <p class="card-text texto__tarjeta">${producto.descripcion}</p>
-              <h6 class="precio">${producto.precio}</h6>
-              <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarrito">Agregar al carrito</a>
-            </div>         
+            <img src="./img/${img}" class="card-img-top img__card" alt="Inodoro de la card ">
+            <div class="card-body cuerpo__card cuerpo__premium">
+              <h5 class="card-title cuerpo__titulo titulo__premium">${linea} </h5>
+              <p class="card-text texto__tarjeta texto__premium">${descripcion}</p>
+              <p class="card-text texto__tarjeta">Stock:${stock}</p>
+              <div class="numeros__premium">
+              <h6 class="precio precio__premium">${precio}</h6>
+              <a href="javascript:addCarrito(${id})" class="btn btn-primary boton__addCarrito btn__premium">Agregar al carrito</a>
+              </div> 
+              </div>    
             
-            `
+            `;
             divProductos.appendChild(prod);
 
 
@@ -124,26 +131,16 @@ addCart( infoProducto ) {
     const existe = carrito.some( producto => producto.id === infoProducto.id );
     
     if(existe) 
-    {
-        
-        const articulos = carrito.map( producto => {
+    {        
+        const prod = carrito.map( producto => {
 
             if(producto.id === infoProducto.id)
             {
-                producto.cantidad++;               
-                return producto;
-            }
-            else
-            {
-                return producto;
-            }
-            carrito = articulos;  
-                    
+                producto.cantidad++;  }             
+                this.mensajeCarrito("Se acualizó la cantidad del producto");
+
 
         })
-
-            this.mensajeCarrito("Se acualizó la cantidad del producto");
-
     }
     else 
     {
@@ -200,12 +197,12 @@ addCart( infoProducto ) {
     // Actualizar contador carrito
     actCount() { 
 
-        let totalArticulos = this.contarProductos();
+        
 
         let countCarrito = document.querySelector('#badgeCarrito');
 
         // Actualizar contador del carrito
-        countCarrito.innerHTML = totalArticulos;
+        countCarrito.innerHTML = carrito.length;
 
     }
 
@@ -227,22 +224,21 @@ addCart( infoProducto ) {
         } else{
        
 
-        carrito.forEach( ( producto ) => {                     
+        carrito.forEach( ( producto ) => { 
+            const {id,linea, descripcion,precio, img, cantidad,stock } = producto;                  
 
             const row = document.createElement('div');
-            row.classList.add('row');
-            
-            total = total + parseInt(producto.precio);
-                        row.innerHTML =`
-                
+            row.classList.add('row');            
+                        row.innerHTML =`                
             <div class="rowCarrito">
-            <img src="${producto.img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
+            <img src="${img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
             <div class="card-body cuerpo__card cardCarritoo">
-              <p class="card-text texto__tarjeta ">${producto.descripcion}</p>
-              <a href="javascript:borrarUnidad(${producto.id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-minus fa-2x"></i></a>
-              <h6 class="cantidad padd-card">${producto.cantidad}</h6>
-              <a href="javascript:addCarrito(${producto.id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-plus fa-2x"></i></a>
-              <h6 class="precio padd-card">$${producto.precio}</h6>
+              <p class="card-text texto__tarjeta ">${descripcion}</p>
+              <a href="javascript:borrarUnidad(${id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-minus fa-2x"></i></a>
+              <h6 class="cantidad padd-card">Cantidad:${cantidad}</h6>
+              <a href="javascript:addCarrito(${id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-plus fa-2x"></i></a>
+              <h6 class="precio padd-card">Precio:$${precio}</h6>
+              <p class="card-text texto__tarjeta ">Subtotal:${precio*cantidad}</p>
                            
             </div>
            
@@ -259,12 +255,7 @@ addCart( infoProducto ) {
         let totalArt = document.createElement('div');
         totalArt.classList.add('totalContainer');
         
-        totalArt.innerHTML = `   <div class="total">
-                                    Total a pagar
-                                 </div>
-                                <div class="precioFinal">
-                                    $${total}
-                                </div>`;
+        totalArt.innerHTML = `Total a pagar: $`+carrito.reduce((acc,prod)=> acc+ prod.cantidad*prod.precio,0);
 
         // Agrega el HTML del carrito en el tbody
             divCart.appendChild(totalArt);
@@ -288,6 +279,7 @@ deleteArt(id) {
             carrito = carrito.filter( producto => producto.id != id);
             
             this.actualizarCarrito();
+            this.showCart();
             this.mensajeCarrito("Producto eliminado");
     }
         })
@@ -295,20 +287,7 @@ deleteArt(id) {
 
 
 
-    // let resp = confirm("Esta seguro de eliminar el producto ?")
-    // if (resp)  {
-    //     carrito = carrito.filter( producto => producto.id != id);
-    //     this.actualizarCarrito();
-
-    //     Swal.fire({
-    //         position: 'center',
-    //         icon: 'info',
-    //         title: 'Producto eliminado del carrito exitosamente',
-    //         showConfirmButton: false,
-    //         timer: 1500
-    //       })
-    // }            
-
+  
 }
 
 

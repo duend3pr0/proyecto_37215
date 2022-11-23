@@ -6,7 +6,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "inodmarina.jpg",
-        "tipo": "inodoro"
+        "tipo": "inodoro",
+        "cantidad": 1
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "inodbari.jpg",
-         "tipo": "inodoro"         
+         "tipo": "inodoro",
+         "cantidad": 1         
          },
 
     {
@@ -26,7 +28,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "inodandina.jpg",
-        "tipo": "inodoro"
+        "tipo": "inodoro",
+        "cantidad": 1
      },
     {
         "id": 4,
@@ -36,7 +39,8 @@
         "precio": 9000,
         "stock": 30,
         "img": "inodtrento.jpg",
-        "tipo": "inodoro"
+        "tipo": "inodoro",
+        "cantidad": 1
         
     },
     {
@@ -47,7 +51,8 @@
         "precio": 14000,
         "stock": 10,
         "img": "inodvarese.jpg",
-        "tipo": "inodoro"
+        "tipo": "inodoro",
+        "cantidad": 1
         
     },
     {
@@ -58,7 +63,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "inodveneto.jpg",
-        "tipo": "inodoro"
+        "tipo": "inodoro",
+        "cantidad": 1
     },          
         {
         "id": 7,
@@ -67,7 +73,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "bidmarina.jpg",
-        "tipo": "bidet"
+        "tipo": "bidet",
+        "cantidad": 1
     },
     {
         "id": 8,
@@ -77,7 +84,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "bidbari.jpg",
-         "tipo": "bidet"          
+         "tipo": "bidet",
+         "cantidad": 1          
          },
 
     {
@@ -88,7 +96,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "bidandina.jpg",
-        "tipo": "bidet"
+        "tipo": "bidet",
+        "cantidad": 1
      },
     {
         "id": 10,
@@ -98,7 +107,8 @@
         "precio": 9000,
         "stock": 30,
         "img": "bidtrento.jpg",
-        "tipo": "bidet"
+        "tipo": "bidet",
+        "cantidad": 1
         
     },
     {
@@ -109,7 +119,8 @@
         "precio": 14000,
         "stock": 10,
         "img": "bidvarese.jpg",
-        "tipo": "bidet"
+        "tipo": "bidet",
+        "cantidad": 1
         
     },
     {
@@ -120,7 +131,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "bidveneto.jpg",
-        "tipo": "bidet"
+        "tipo": "bidet",
+        "cantidad": 1
     },
     {
         "id": 13,
@@ -129,7 +141,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "depomarina.jpg",
-        "tipo": "deposito"
+        "tipo": "deposito",
+        "cantidad": 1
     },
     {
         "id": 14,
@@ -139,7 +152,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "depobari.jpg",
-         "tipo": "deposito"
+         "tipo": "deposito",
+         "cantidad": 1
          },
 
     {
@@ -150,7 +164,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "depoandina.jpg",
-        "tipo": "deposito"
+        "tipo": "deposito",
+        "cantidad": 1
      },
     {
         "id": 16,
@@ -160,7 +175,8 @@
         "precio": 9000,
         "stock": 30,
         "img": "depotrento.jpg",
-        "tipo": "deposito"
+        "tipo": "deposito",
+        "cantidad": 1
         
     },
     {
@@ -171,7 +187,8 @@
         "precio": 14000,
         "stock": 10,
         "img": "depovarese.jpg",
-        "tipo": "deposito"
+        "tipo": "deposito",
+        "cantidad": 1
         
     },
     {
@@ -182,7 +199,8 @@
         "precio": 8000,
         "stock": 30,
         "img": "depoveneto.jpg",
-        "tipo": "deposito"
+        "tipo": "deposito",
+        "cantidad": 1
     }
 ],
 "lineas": [

@@ -6,6 +6,8 @@ let productos = [];
 const key_carrito = "carrito";
 
 const url = './json/productos.json';
+const vaciarCarrito = document.querySelector('#vaciarCarrito');
+
 
 
 let sistema;
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded',() =>{
     carrito = JSON.parse(localStorage.getItem(key_carrito)) || [];   
     sistema = new GestionarProductos();
     sistema.iniciar(); 
+    sistema.showCart();
     
 
 });
@@ -60,8 +63,32 @@ document.querySelector('#buscar').addEventListener('keyup', () => {
 
 })
 
+function vaciar_Carrito(){
+
+    carrito = [];
+    sistema.showCart();
+    sistema.actualizarCarrito();
+    sistema.actCount();
+    sistema.saveCart();
+
+
+}
+
+
+
+
+
 function finalizarCompra(){
 
+    if(carrito.length === 0){
+        Swal.fire({
+            title: "El carrito está vacío",
+            text:"Compra algún producto para continuar",
+            icon: "error",
+            confirmButtonText: "Aceptar",        
+            
+    })
+}else
     Swal.fire({
         title: "Desea finalizar la compra?",
         showCancelButton: true,
