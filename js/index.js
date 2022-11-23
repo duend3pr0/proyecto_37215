@@ -7,7 +7,10 @@ const key_carrito = "carrito";
 
 const url = './json/productos.json';
 const vaciarCarrito = document.querySelector('#vaciarCarrito');
-
+const activarFuncion = document.querySelector('#activarFuncion');
+if(activarFuncion){
+activarFuncion.addEventListener('click',procesarPedido);
+}
 
 
 let sistema;
@@ -85,8 +88,8 @@ function finalizarCompra(){
             title: "El carrito está vacío",
             text:"Compra algún producto para continuar",
             icon: "error",
-            confirmButtonText: "Aceptar",        
-            
+            confirmButtonText: "Aceptar"
+
     })
 }else
     Swal.fire({
@@ -98,16 +101,37 @@ function finalizarCompra(){
         input: "./views/contact.html"
     }).then( (respuesta) => {
         if(respuesta.isConfirmed){        
-            carrito = []            
-            sistema.actualizarCarrito();
-            sistema.mensajeCarrito("Carrito vacío");
-            
-
-            
+            location.href = "./views/fcompra.html";
+            procesarPedido();            
     }
         })
 
 }
+
+
+function procesarPedido() {
+    carrito.forEach((prod) => {
+      const listaCompra = document.querySelector("#lista-compra tbody");
+      const { id, nombre, precio, img, cantidad } = prod;
+      if (listaCompra) {
+        const row = document.createElement("tr");
+        row.innerHTML += `
+                <td>
+                <img class="img-fluid img-carrito" src="${img}"/>
+                </td>
+                <td>${nombre}</td>
+              <td>${precio}</td>
+              <td>${cantidad}</td>
+              <td>${precio * cantidad}</td>
+              `;
+        listaCompra.appendChild(row);
+      }
+    });
+    totalProceso.innerText = carrito.reduce(
+      (acc, prod) => acc + prod.cantidad * prod.precio,
+      0
+    );
+  }
 
 
 

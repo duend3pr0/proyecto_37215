@@ -136,11 +136,11 @@ addCart( infoProducto ) {
 
             if(producto.id === infoProducto.id)
             {
-                producto.cantidad++;  }             
-                this.mensajeCarrito("Se acualizó la cantidad del producto");
+                producto.cantidad++;  }                 
 
 
         })
+        this.mensajeCarrito("Se acualizó la cantidad del producto");
     }
     else 
     {
@@ -233,12 +233,12 @@ addCart( infoProducto ) {
             <div class="rowCarrito">
             <img src="${img}" class="card-img-top img__card imgCarrito" alt="Inodoro de la card ">
             <div class="card-body cuerpo__card cardCarritoo">
-              <p class="card-text texto__tarjeta ">${descripcion}</p>
+              <p class="card-text texto__tarjeta texto__carrito">${descripcion}</p>
               <a href="javascript:borrarUnidad(${id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-minus fa-2x"></i></a>
-              <h6 class="cantidad padd-card">Cantidad:${cantidad}</h6>
+              <h6 class="cantidad padd-card texto__carrito">Cantidad:${cantidad}</h6>
               <a href="javascript:addCarrito(${id})" class="btn btn-primary boton__addCarritocanvas padd-card"><i class="fa-solid fa-square-plus fa-2x"></i></a>
               <h6 class="precio padd-card">Precio:$${precio}</h6>
-              <p class="card-text texto__tarjeta ">Subtotal:${precio*cantidad}</p>
+              <p class="card-text texto__tarjeta ">Subtotal:$ ${precio*cantidad}</p>
                            
             </div>
            
@@ -266,6 +266,10 @@ addCart( infoProducto ) {
 
 
 // A partir de un id se elimina el producto
+
+
+
+
 deleteArt(id) { 
 
     Swal.fire({
@@ -273,7 +277,6 @@ deleteArt(id) {
         showCancelButton: true,
         cancelButtonColor: "red",
         confirmButtonText: "Confirmar",
-        cancelbuttonText: "Abortar eliminar producto"
     }).then( (respuesta) => {
         if(respuesta.isConfirmed){        
             carrito = carrito.filter( producto => producto.id != id);

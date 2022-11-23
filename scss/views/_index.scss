@@ -68,6 +68,7 @@ body{
 }
 .texto__tarjeta{
     color: black;
+    font-size: 1rem;
 }
 
 .cantidad{
@@ -133,21 +134,22 @@ body{
 
 }
 .imgCarrito{
-    width: 20%;
+    width: 15%;
     padding: 0 !important;
 }
-.texto__tarjeta{
+.texto__carrito{
     padding: 0 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .precio{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .totalContainer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
 .total{
     padding-right:  2rem !important;
     color: green;
