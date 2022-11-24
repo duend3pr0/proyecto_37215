@@ -212,7 +212,7 @@ addCart( infoProducto ) {
      // Actualizar detalle del carrito
      showCart() { 
         
-
+        if(document.querySelector('#detailCart')){
         let divCart = document.querySelector('#detailCart');
 
         divCart.innerHTML = '';
@@ -261,7 +261,7 @@ addCart( infoProducto ) {
             divCart.appendChild(totalArt);
              }
 
-
+            }
 
 
 

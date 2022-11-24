@@ -8,10 +8,6 @@ const key_carrito = "carrito";
 const url = './json/productos.json';
 const vaciarCarrito = document.querySelector('#vaciarCarrito');
 const activarFuncion = document.querySelector('#activarFuncion');
-if(activarFuncion){
-activarFuncion.addEventListener('click',procesarPedido);
-}
-
 
 let sistema;
 
@@ -98,7 +94,7 @@ function finalizarCompra(){
         cancelButtonColor: "red",
         confirmButtonText: "Confirmar",        
         cancelbuttonText: "No, seguir comprando",
-        input: "./views/contact.html"
+        
     }).then( (respuesta) => {
         if(respuesta.isConfirmed){        
             location.href = "./views/fcompra.html";
